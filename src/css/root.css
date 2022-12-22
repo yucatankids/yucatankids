@@ -4,9 +4,9 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #FFBA19;
-    --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
+    --primary: #6ab53c;
+    --primaryShade: #aadb8c;
+    --primaryDark: #6ab53c;
     --bodyTextColor: #4E4B66;
     --bodyTextColorWhite: #FAFBFC;
     --headerColor: #1a1a1a;
@@ -15,7 +15,7 @@
     /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+    --sectionPadding: clamp(3.75em, 6.82vw, 6.25em) 1rem;
   }
   /* roboto-regular - latin */
   @font-face {
