@@ -21,9 +21,9 @@ eleventyComputed:
 
 <section id="int-hero">
     <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" width="400" height="662">
+        <source media="(max-width: 600px)" srcset="/assets/images/blurrypen.jpeg">
+        <source media="(min-width: 601px)" srcset="/assets/images/blurrypen.jpeg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/blurrypen.jpeg" alt="cabinets" width="400" height="662">
     </picture>
   </section>
 
@@ -41,7 +41,7 @@ eleventyComputed:
     <article class="blog-article">
     <!--Main Article Image-->
     <picture class="blog-mainImage">
-        <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async" />
+        <img id="myImg" src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async" />
     </picture>
     <!--Article Info-->
     <div class="article-group">
@@ -50,11 +50,11 @@ eleventyComputed:
         <!--Author Image-->
         <picture class="blog-author-img">
             <img
-            src="/assets/images/profile.svg"
-            alt="house"
-            width="32"
-            height="32"
-            decoding="async"
+                src="/assets/images/logos/1MainLogoSOLIDBackg.png"
+                alt="Yucatan Kids logo"
+                width="32"
+                height="32"
+                decoding="async"
             />
         </picture>
         <span class="blog-author">{{ author }}</span>
@@ -67,7 +67,15 @@ eleventyComputed:
         {{ content | safe }}
     </section>
     </article>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- <span class="close">&times;</span> -->
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        <span class="close">&times;</span>
+    </div>
 </div>
+
 <!-- End .main-content -->
 
 <!-- ============================================ -->

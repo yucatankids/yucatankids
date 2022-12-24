@@ -1,14 +1,28 @@
 ---
-pageName: blog-template
-blogTitle: How Much Does a Solar Panel Installation Cost?
-titleTag: 'Performing Arts High Schools in Houston: a Guide | Cixi Music Studio'
-blogDescription: Curious about solar panel pricing? Find out everything you want to know about solar pricing from a transparent solar installation company.
-author: Joe Mendez
-date: 2022-07-18T15:46:45.249Z
+pageName: cocktail-party-fundraiser
+blogTitle: Join Us for Our Cocktail Party Fundraiser!
+titleTag: "Cocktail Party Fundraiser Event "
+blogDescription: Cocktail Party Fundraiser announcement and invite for the
+  benefit of the children of Caimede at Casa de las Torres in Mérida, Yucatán on
+  November 26th
+author: Yucatán Kids
+date: 2022-11-01T16:46:45.249Z
 tags:
   - post
   - featured
-image: /assets/images/cabinets2-m.jpg
-imageAlt: Solar Panles
+image: /images/blog/310062690_2924448244523836_5903484075678175221_n.jpg
+imageAlt: Cocktail Party Invite
 ---
-His etudes and concertos are performed by the world’s leading pianists, and they are famed for their difficulty. Not to mention the International Chopin Piano Competition, an annual affair in Warsaw that springboards the careers of many famous pianists.
+Our fundraiser event is coming up on November 26th at Casa de Las Torres! Check out our prizes for the raffle with over 20 fabulous prizes. Tickets are available at Restaurante Hacienda Teya, Calle 60 x 55 y 53, Santa Lucia, online, and at the event at the door. You don't need to be present to win. Join us for a great cause.
+
+¡Nuestro evento de recaudación de fondos se acerca el 26 de noviembre en Casa de Las Torres! Consulta nuestros [](<>)premios para la rifa con más de 20 fabulosos premios. Los boletes están disponibles en el Restaurante Hacienda Teya, Calle 60 x 55 y 53, Santa Lucía, en línea y en el evento en la entrada. No necesita estar presente para ganar. Únase a nosotros por una gran causa.
+
+Ticket sales at...
+
+[Restaurante Hacienda Teya](https://www.facebook.com/TeyaSantaLucia/?__cft__[0]=AZVjcEdfmEKZFhKZ8-oWibCYyMd_CcbLNGOA_gLStzAEiaMa5ByJ5tY0NJk_e6lreKnuE02kW0BTSej48a8NOJc7rH72xs5uf56lOyihbKolqntnQTE9ZqYyrkD9LuRy2c7vQOvxyyTJBjPDw_PMYo1LtmIroWGqVHuU2xrBWROzzp4wQzgkR50w8JQ4U5WuaRA&__tn__=kK-R)
+
+[Merida English Library](https://www.facebook.com/meridaenglishlibrary/?__cft__[0]=AZVjcEdfmEKZFhKZ8-oWibCYyMd_CcbLNGOA_gLStzAEiaMa5ByJ5tY0NJk_e6lreKnuE02kW0BTSej48a8NOJc7rH72xs5uf56lOyihbKolqntnQTE9ZqYyrkD9LuRy2c7vQOvxyyTJBjPDw_PMYo1LtmIroWGqVHuU2xrBWROzzp4wQzgkR50w8JQ4U5WuaRA&__tn__=kK-R)
+
+[Joyería Ricalde](https://www.facebook.com/JoyeriaRicalde?__cft__[0]=AZVjcEdfmEKZFhKZ8-oWibCYyMd_CcbLNGOA_gLStzAEiaMa5ByJ5tY0NJk_e6lreKnuE02kW0BTSej48a8NOJc7rH72xs5uf56lOyihbKolqntnQTE9ZqYyrkD9LuRy2c7vQOvxyyTJBjPDw_PMYo1LtmIroWGqVHuU2xrBWROzzp4wQzgkR50w8JQ4U5WuaRA&__tn__=-]K-R)
+
+[https://yucatanmagazine.com/one-fun-way-to-benefit-at.../](https://yucatanmagazine.com/one-fun-way-to-benefit-at-risk-kids-in-yucatan/?fbclid=IwAR2EysL6JcUqM_Isss3o74H0n7HtbMb_CBjzNxmB-ryhGGU9H54vP1YrhM8)
