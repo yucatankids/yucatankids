@@ -4,7 +4,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #sbs {
-    padding: var(--sectionPadding);
+    padding: 75px  1rem;
   }
   #sbs .cs-container {
     width: 100%;
@@ -189,7 +189,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #sbs-r {
-    padding: var(--sectionPadding);
+    padding: 75px 1rem;
   }
   #sbs-r .cs-container {
     width: 100%;
@@ -489,7 +489,7 @@
   #reviews {
     /* Centers the button */
     text-align: center;
-    padding: var(--sectionPadding);
+    padding: 85px 1rem;
   }
   #reviews .cs-container {
     width: 100%;

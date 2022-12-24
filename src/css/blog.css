@@ -1,6 +1,93 @@
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  top: 20px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 30px 0;
+  /* height: 150px; */
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute; 
+  top: 105px;
+  right: 25%;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   :root {
@@ -269,6 +356,7 @@
     display: block;
     border-radius: 50%;
     overflow: hidden;
+    border: .5px solid black;
   }
   .recent-articles .blog-author-img img {
     position: absolute;
@@ -522,6 +610,12 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .blog-article .blog-mainImage img:hover {
+    opacity: 0.7;
   }
   .blog-article .blog-author-img {
     width: 2em;
@@ -530,6 +624,7 @@
     display: block;
     border-radius: 50%;
     overflow: hidden;
+    border: .5px solid black;
   }
   .blog-article .blog-author-img img {
     position: absolute;
