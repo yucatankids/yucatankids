@@ -314,6 +314,6 @@
   }
   body.dark-mode #cs-contact .cs-bg-picture img {
     /* lets parent background-color bleed through and darken it */
-    opacity: .5;
+    opacity: .25;
   }
 }
