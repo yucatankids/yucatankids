@@ -10,7 +10,7 @@
     --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: 30px 0;
+    --sectionPadding: 100px 0;
   }
   #cs-contact {
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -154,7 +154,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
   }
   #cs-contact .cs-header {
     /* 16px - 20px */
@@ -216,7 +215,6 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
     top: 0;
     left: 0;
     z-index: 1;
