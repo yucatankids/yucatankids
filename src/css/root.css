@@ -540,6 +540,9 @@
   body.dark-mode #navigation #navbar-menu ul li a.active {
     color: var(--primary);
   }
+  body.dark-mode .button-nosolid {
+    color: var(--primary);
+  }
 }
 /* Dark Mode Desktop */
 @media only screen and (min-width: 1024px) {
@@ -559,6 +562,9 @@
     background: var(--accent);
   }
   body.dark-mode #navigation #navbar-menu ul li a.active {
+    color: var(--primary);
+  }
+  body.dark-mode .button-nosolid {
     color: var(--primary);
   }
 }
@@ -670,8 +676,8 @@
     text-align: center;
   }
   #footer .left-section .logo img {
-    width: auto;
-    height: 100%;
+    width: 120px;
+    height: auto;
     display: block;
   }
   #footer .left-section p {

@@ -6,7 +6,7 @@
   #reviews {
     /* Centers the button */
     text-align: center;
-    padding: 85px 1rem;
+    padding: 60px 1rem;
   }
 
   #reviews .cs-container {
@@ -190,9 +190,9 @@
   }
 
   .services .card picture {
-    background: var(--primary);
-    width: 5.5em;
-    height: 5.5em;
+    background: #ffffff;
+    width: 6.5em;
+    height: 6.5em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -202,8 +202,8 @@
   }
 
   .services .card picture img {
-    width: 3em;
-    height: 3em;
+    width: 6em;
+    height: 6em;
   }
 
   .services .card h2 {
@@ -257,7 +257,7 @@
   }
 
   body.dark-mode #services picture {
-    background: var(--primaryDark);
+    background: #ffffff;
   }
 
   body.dark-mode #services h2 {
@@ -271,7 +271,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #reviews {
-    padding-top: 7.5rem;
+    /* padding-top: 7.5rem; */
     padding-bottom: 3.125rem;
     margin: auto;
   }

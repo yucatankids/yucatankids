@@ -342,7 +342,8 @@
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
+    background-color: #e8edea;
   }
   .recent-articles .article-group {
     padding: clamp(30px, 5vw, 50px);
@@ -609,7 +610,8 @@
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
+    background-color: #e8edea;
     cursor: pointer;
     transition: 0.3s;
   }

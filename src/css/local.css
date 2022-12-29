@@ -562,7 +562,7 @@
     height: 5rem;
     position: absolute;
     top: -2.5rem;
-    background: var(--primary);
+    background: #ffffff;
     border-radius: 50%;
   }
   #reviews .cs-item-p {
