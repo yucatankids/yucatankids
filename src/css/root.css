@@ -129,6 +129,45 @@
     width: 0;
     transition: width .3s;
   }
+    .button-nosolid {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      width: auto;
+      line-height: 3.125em;
+      height: 3.125rem;
+      text-align: center;
+      padding: 0 1.875rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+      transition: color .3s;
+      transition-delay: .1s;
+    }
+  
+    .button-nosolid:hover {
+      color: #fff;
+    }
+  
+    .button-nosolid:hover:before {
+      width: 100%;
+    }
+  
+    .button-nosolid:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #000;
+      width: 0;
+      transition: width .3s;
+    }
   .skip {
     position: absolute;
     top: 0;
@@ -329,8 +368,8 @@
     z-index: -1;
   }
   #navigation #navbar-menu.open {
-    height: 22.25rem;
-    padding-top: 1.25rem;
+    height: 20.25rem;
+    padding-top: 3.25rem;
     z-index: -100;
   }
   #navigation #navbar-menu.open ul li {
@@ -501,6 +540,9 @@
   body.dark-mode #navigation #navbar-menu ul li a.active {
     color: var(--primary);
   }
+  body.dark-mode .button-nosolid {
+    color: var(--primary);
+  }
 }
 /* Dark Mode Desktop */
 @media only screen and (min-width: 1024px) {
@@ -520,6 +562,9 @@
     background: var(--accent);
   }
   body.dark-mode #navigation #navbar-menu ul li a.active {
+    color: var(--primary);
+  }
+  body.dark-mode .button-nosolid {
     color: var(--primary);
   }
 }
@@ -545,7 +590,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: .4;
     top: 0;
     left: 0;
     z-index: -1;
@@ -631,8 +676,8 @@
     text-align: center;
   }
   #footer .left-section .logo img {
-    width: auto;
-    height: 100%;
+    width: 120px;
+    height: auto;
     display: block;
   }
   #footer .left-section p {

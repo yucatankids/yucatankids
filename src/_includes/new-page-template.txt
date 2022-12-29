@@ -1,8 +1,8 @@
 ---
 layout: 'base.html'
 description: "Meta description for the page"
-metaTitle: 'Title that shows up on social OG Tags'
-tagTitle: 'Company Name | What They Do | Town and State'
+metaTitle: 'Nonprofit Independent Volunteer Group'
+tagTitle: 'Yucatán Kids | An English and Cultural Arts Initiative'
 permalink: 'pageName/'
 ---
 
