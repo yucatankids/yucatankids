@@ -4,7 +4,7 @@ blogTitle: How To Donate To Yucatán Kids | Cómo Donar A Nosotros
 titleTag: Donate | Donar
 blogDescription: How To Donate To Yucatán Kids | Cómo Donar A Nosotros
 author: Yucatán Kids
-date: 2022-12-29T21:23:07.495Z
+date: 2022-10-01T20:23:07.495Z
 tags:
   - post
   - featured
