@@ -9,7 +9,6 @@ author: Yucatán Kids
 date: 2022-11-01T17:30:44.152Z
 tags:
   - post
-  - featured
 image: /images/blog/310062690_2924448244523836_5903484075678175221_n.jpg
 imageAlt: Cocktail Party Invite
 ---
