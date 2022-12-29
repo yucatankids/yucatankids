@@ -143,6 +143,51 @@
             transition: width .3s;
         }
     }
+
+        .button-nosolid {
+            font-size: 16/16rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            width: auto;
+            line-height: 50/16em;
+            height: 50/16rem;
+            text-align: center;
+            padding: 0 30/16rem;
+            position: relative;
+            z-index: 1;
+            background-color: var(--primary);
+    
+            // Transition Properties
+            color: #000;
+            transition: color .3s;
+            transition-delay: .1s;
+    
+            &:hover {
+                color: #fff;
+    
+                &:before {
+                    width: 100%;
+                }
+            }
+    
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background-color: #000;
+    
+                //Transition properties
+                width: 0;
+                transition: width .3s;
+            }
+        }
     
     // HIdden Screen reader skip nav button
     .skip {
@@ -716,7 +761,7 @@
             height: 100%;
             width: 100%;
             background: #000;
-            opacity: .7;
+            opacity: .4;
             top: 0;
             left: 0;
             z-index: -1;
@@ -910,6 +955,12 @@
             }
     
             .button-solid {
+                margin: 0;
+                height: 53/16rem;
+                padding-top: 3/16rem;
+                width: 250/16rem;
+            }
+            .button-nosolid {
                 margin: 0;
                 height: 53/16rem;
                 padding-top: 3/16rem;

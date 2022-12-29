@@ -1,12 +1,9 @@
 ---
 layout: 'base.html'
-description: 'Contact'
+description: 'Submission Verification'
 metaTitle: 'Nonprofit Independent Volunteer Group'
 tagTitle: 'Yucatán Kids | An English and Cultural Arts Initiative'
-permalink: 'contact/'
-eleventyNavigation:
-    key: Contact
-    order: 600
+permalink: 'submission-success/'
 ---
 
 {% block preload %}
@@ -28,7 +25,8 @@ eleventyNavigation:
     <picture>
         <source media="(max-width: 600px)" srcset="/assets/images/blurredclassroom.jpeg">
         <source media="(min-width: 601px)" srcset="/assets/images/blurredclassroom.jpeg">
-        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/blurredclassroom.jpeg" alt="" width="400" height="662">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/blurredclassroom.jpeg" alt=""
+            width="400" height="662">
     </picture>
 </section>
 
@@ -41,32 +39,12 @@ eleventyNavigation:
         <form id="cs-form" name="Contact Form" method="POST" data-netlify="true" action="/pages/success">
             <div class="cs-content">
                 <span class="cs-topper">Contact</span>
-                <h2 class="cs-title">Get in Touch!</h2>
+                <h2 class="cs-title">Success!</h2>
                 <p class="cs-text">
-                    Use this contact form to send in ideas, questions, or comments. We greatly appreciate the feedback! Thank you!
+                    We have recieved your submission and will be in touch! Thank you!
                 </p>
             </div>
-            <label>
-                Name
-                <input required type="text" id="name" name="name" placeholder="Name">
-            </label>
-            <label>
-                Email
-                <input required type="text" id="email" name="email" placeholder="Email">
-            </label>
-            <label>
-                Phone
-                <input required type="text" id="phone" name="phone" placeholder="Phone">
-            </label>
-            <label>
-                How did you find us?
-                <input type="text" id="find" name="find-us" placeholder="How?">
-            </label>
-            <label class="cs-label-message">
-                Message
-                <textarea required name="Message" id="message" placeholder="Ideas, questions, or comments go here!"></textarea>
-            </label>
-            <button class="cs-button-solid" type="submit">Submit Message</button>
+            <a href="/contact" class="cs-button-solid">Return To Form</a>
         </form>
         <div class="cs-right-section">
             <!--Email-->
@@ -77,15 +55,15 @@ eleventyNavigation:
             <a class="cs-link" href="tel:+52999-232-7039">+52(999) 23-27-039</a>
             <!--Address-->
             <span class="cs-header">Address</span>
-            <a class="cs-link" href="">Calle 116 A, 701E Jardines de 
+            <a class="cs-link" href="">Calle 116 A, 701E Jardines de
                 Nueva Mulsay I <span class="cs-block"> 97249 Mérida, Yucatán, México</span></a>
             <!-- Background Image-->
             <picture aria-hidden="true" class="cs-bg-picture">
                 <source media="(max-width: 600px)" srcset="/assets/images/bluewallandbookbag.jpeg">
                 <source media="(min-width: 601px)" srcset="/assets/images/bluewallandbookbag.jpeg">
-                <img loading="lazy" decoding="async" src="/assets/images/bluewallandbookbag.jpeg" alt="bookbag" width="542" height="662">
+                <img loading="lazy" decoding="async" src="/assets/images/bluewallandbookbag.jpeg" alt="bookbag"
+                    width="542" height="662">
             </picture>
         </div>
     </div>
 </section>
-                                

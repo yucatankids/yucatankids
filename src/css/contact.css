@@ -10,7 +10,7 @@
     --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: 100px 0;
+    --sectionPadding: 100px 20px;
   }
   #cs-contact {
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -317,3 +317,47 @@
     opacity: .25;
   }
 }
+
+/*-- -------------------------- -->
+<---          Volunteer         -->
+<--- -------------------------- -*/
+
+      h1 {
+      font-weight: 400;
+      }
+      h4 {
+      margin: 15px 0 4px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      vertical-align: middle;
+      }
+      input:hover, textarea:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      th, td {
+      width: 15%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 16%;
+      text-align: left;
+      }
+      table {
+      width: 100%;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+      }

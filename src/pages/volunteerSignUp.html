@@ -1,0 +1,124 @@
+---
+layout: 'base.html'
+description: 'Volunteer Sign Up Form'
+metaTitle: 'Nonprofit Independent Volunteer Group'
+tagTitle: 'Yucatán Kids | An English and Cultural Arts Initiative'
+permalink: 'volunteer-signup/'
+---
+
+{% block preload %}
+<link rel="preload" as="image" href="/assets/images/business-teamwork-join-hands-together-business-teamwork-concept.jpg">
+{% endblock %}
+
+{% block pageCSS %}
+<link rel="stylesheet" href="/css/getInvolved.css">
+{% endblock %}
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Become A Volunteer</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/business-teamwork-join-hands-together-business-teamwork-concept.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/business-teamwork-join-hands-together-business-teamwork-concept.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/business-teamwork-join-hands-together-business-teamwork-concept.jpg" alt=""
+            width="400" height="662">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact">
+    <div class="cs-container">
+        <form id="cs-form" name="Volunteer Form" method="POST" data-netlify="true" action="/pages/success">
+            <div class="cs-content">
+                <span class="cs-topper">Sign Up</span>
+                <h2 class="cs-title">Tell Us About You</h2>
+                <p class="cs-text">
+                    We are always open to more volunteers.
+                    Fill out the form below and we will be in contact!
+                </p>
+            </div>
+            <label>
+                Name
+                <input required type="text" id="name" name="name" placeholder="Name" class="text">
+            </label>
+            <label>
+                Email
+                <input required type="text" id="email" name="email" placeholder="Email" class="text">
+            </label>
+            <label>
+                Phone
+                <input required type="text" id="phone" name="phone" placeholder="Phone" class="text">
+            </label>
+            <label>
+                How did you hear about us?
+                <input type="text" id="find" name="find-us" placeholder="From a friend, social media, etc." class="text">
+            </label>
+            <label class="cs-label-message">
+                Tell us a little about you!
+                <textarea required name="Message" id="message"
+                    placeholder="Help us get to know you"></textarea>
+            </label>
+        <h3>When are you available to volunteer?</h3>
+        <table>
+            <tr>
+                <th class="first-col"></th>
+                <th><p>Mon</p></th>
+                <th><p>Tues</p></th>
+                <th><p>Wed</p></th>
+                <th><p>Thurs</p></th>
+                <th><p>Fri</p></th>
+                <th><p>Sat</p></th>
+                <th><p>Sun</p></th>
+            </tr>
+            <tr>
+                <td class="first-col"><p>Morning</p></td>
+                <td><input type="checkbox" value="Monday Morning" name="rate" /></td>
+                <td><input type="checkbox" value="Tuesday Morning" name="rate" /></td>
+                <td><input type="checkbox" value="Wednesday Morning" name="rate" /></td>
+                <td><input type="checkbox" value="Thursday Morning" name="rate" /></td>
+                <td><input type="checkbox" value="Friday Morning" name="rate" /></td>
+                <td><input type="checkbox" value="Saturday Morning" name="rate" /></td>
+                <td><input type="checkbox" value="Sunday Morning" name="rate" /></td>
+            </tr>
+            <tr>
+                <td class="first-col"><p>Afternoon</p></td>
+                <td><input type="checkbox" value="Monday Afternoon" name="satisfied" /></td>
+                <td><input type="checkbox" value="Tuesday Afternoon" name="satisfied" /></td>
+                <td><input type="checkbox" value="Wednesday Afternoon" name="satisfied" /></td>
+                <td><input type="checkbox" value="Thursday Afternoon" name="satisfied" /></td>
+                <td><input type="checkbox" value="Friday Afternoon" name="satisfied" /></td>
+                <td><input type="checkbox" value="Saturday Afternoon" name="satisfied" /></td>
+                <td><input type="checkbox" value="Sunday Afternoon" name="satisfied" /></td>
+            </tr>
+        </table>
+            <button class="cs-button-solid" type="submit">Submit</button>
+        </form>
+        <div class="cs-right-section">
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a class="cs-link" href="mailto:yucatankidsmx@gmail.com">yucatankidsmx@gmail.com</a>
+            <!--Phone-->
+            <span class="cs-header">Phone</span>
+            <a class="cs-link" href="tel:+52999-232-7039">+52(999) 23-27-039</a>
+            <!--Address-->
+            <span class="cs-header">Address</span>
+            <a class="cs-link" href="">Calle 116 A, 701E Jardines de
+                Nueva Mulsay I <span class="cs-block"> 97249 Mérida, Yucatán, México</span></a>
+            <!-- Background Image-->
+            <picture aria-hidden="true" class="cs-bg-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/bluewallandbookbag.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/bluewallandbookbag.jpeg">
+                <img loading="lazy" decoding="async" src="/assets/images/bluewallandbookbag.jpeg" alt="bookbag"
+                    width="542" height="662">
+            </picture>
+        </div>
+    </div>
+</section>
