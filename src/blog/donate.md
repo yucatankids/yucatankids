@@ -9,7 +9,7 @@ tags:
   - post
   - featured
 image: /images/blog/support.png
-imageAlt: Logo
+imageAlt: Donation Icon
 ---
 ![Instructions to donate](/images/blog/donate_eng.jpg "English Instructions")
 
