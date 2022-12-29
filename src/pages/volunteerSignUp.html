@@ -36,7 +36,7 @@ permalink: 'volunteer-signup/'
 
 <section id="cs-contact">
     <div class="cs-container">
-        <form id="cs-form" name="Volunteer Form" method="POST" data-netlify="true" action="/pages/success">
+        <form id="cs-form" name="Volunteer Form" method="POST" data-netlify="true" action="/src/pages/success.html">
             <div class="cs-content">
                 <span class="cs-topper">Sign Up</span>
                 <h2 class="cs-title">Tell Us About You</h2>
@@ -59,11 +59,11 @@ permalink: 'volunteer-signup/'
             </label>
             <label>
                 How did you hear about us?
-                <input type="text" id="find" name="find-us" placeholder="From a friend, social media, etc." class="text">
+                <input type="text" id="find" name="how-did-you-find-us" placeholder="From a friend, social media, etc." class="text">
             </label>
             <label class="cs-label-message">
                 Tell us a little about you!
-                <textarea required name="Message" id="message"
+                <textarea required name="About" id="message"
                     placeholder="Help us get to know you"></textarea>
             </label>
         <h3>When are you available to volunteer?</h3>
@@ -80,23 +80,23 @@ permalink: 'volunteer-signup/'
             </tr>
             <tr>
                 <td class="first-col"><p>Morning</p></td>
-                <td><input type="checkbox" value="Monday Morning" name="rate" /></td>
-                <td><input type="checkbox" value="Tuesday Morning" name="rate" /></td>
-                <td><input type="checkbox" value="Wednesday Morning" name="rate" /></td>
-                <td><input type="checkbox" value="Thursday Morning" name="rate" /></td>
-                <td><input type="checkbox" value="Friday Morning" name="rate" /></td>
-                <td><input type="checkbox" value="Saturday Morning" name="rate" /></td>
-                <td><input type="checkbox" value="Sunday Morning" name="rate" /></td>
+                <td><input type="checkbox" value="Monday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Tuesday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Wednesday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Thursday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Friday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Saturday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Sunday Morning" name="morning-availability" /></td>
             </tr>
             <tr>
                 <td class="first-col"><p>Afternoon</p></td>
-                <td><input type="checkbox" value="Monday Afternoon" name="satisfied" /></td>
-                <td><input type="checkbox" value="Tuesday Afternoon" name="satisfied" /></td>
-                <td><input type="checkbox" value="Wednesday Afternoon" name="satisfied" /></td>
-                <td><input type="checkbox" value="Thursday Afternoon" name="satisfied" /></td>
-                <td><input type="checkbox" value="Friday Afternoon" name="satisfied" /></td>
-                <td><input type="checkbox" value="Saturday Afternoon" name="satisfied" /></td>
-                <td><input type="checkbox" value="Sunday Afternoon" name="satisfied" /></td>
+                <td><input type="checkbox" value="Monday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Tuesday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Wednesday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Thursday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Friday Afternoon" name="afternoon" /></td>
+                <td><input type="checkbox" value="Saturday Afternoon" name="afternoon" /></td>
+                <td><input type="checkbox" value="Sunday Afternoon" name="afternoon" /></td>
             </tr>
         </table>
             <button class="cs-button-solid" type="submit">Submit</button>
