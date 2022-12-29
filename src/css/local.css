@@ -489,7 +489,7 @@
   #reviews {
     /* Centers the button */
     text-align: center;
-    padding: 85px 1rem;
+    padding: 55px 1rem 85px;
   }
   #reviews .cs-container {
     width: 100%;
@@ -558,8 +558,8 @@
     margin-bottom: 0;
   }
   #reviews .cs-item-img {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     position: absolute;
     top: -2.5rem;
     background: #ffffff;
