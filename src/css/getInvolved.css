@@ -1090,7 +1090,7 @@ h4 {
 }
 
 table input {
-  width: calc(100% - 10px);
+  width: 100%;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -1115,7 +1115,7 @@ td {
 }
 
 .first-col {
-  width: 16%;
+  width: 80px;
   text-align: left;
 }
 

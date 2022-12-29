@@ -368,8 +368,8 @@
     z-index: -1;
   }
   #navigation #navbar-menu.open {
-    height: 22.25rem;
-    padding-top: 1.25rem;
+    height: 20.25rem;
+    padding-top: 3.25rem;
     z-index: -100;
   }
   #navigation #navbar-menu.open ul li {
