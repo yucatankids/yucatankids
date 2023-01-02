@@ -11,6 +11,9 @@ tags:
 image: /images/blog/support.png
 imageAlt: Donation Icon
 ---
+#  ﻿ [Click Here To Donat﻿e Today!](https://www.paypal.com/paypalme/JaneDMallonee) 
+
+# 
 ![Instructions to donate](/images/blog/donate_eng.jpg "English Instructions")
 
 <hr />
