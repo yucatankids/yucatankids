@@ -903,3 +903,12 @@
     right: auto;
   }
 }
+
+ .blog-header #facebook-link {
+  font-size: 1em;
+  color: var(--bodyHeader);
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.875rem;
+ }
