@@ -1127,7 +1127,7 @@ table {
 .preferred-contact {
   display: flex;
 }
-.preferred-contact span {
+.preferred-contact div {
   padding: 5px 20px;
 }
 
