@@ -218,6 +218,8 @@
     top: 0;
     left: 0;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: .1;
   }
   #cs-contact .cs-bg-picture img {
     position: absolute;

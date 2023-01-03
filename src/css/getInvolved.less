@@ -1001,8 +1001,6 @@
             left: 0;
             z-index: -1;
             transition: transform .6s;
-            background-color: #000;
-            opacity: .2;
 
             &:before {
                 /* background color overlay */
@@ -1011,10 +1009,11 @@
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
                 top: 0;
                 left: 0;
                 z-index: 1;
+                background-color: rgba(0, 0, 0, 0.55);
+                opacity: .1;
             }
 
             img {
