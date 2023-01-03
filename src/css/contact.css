@@ -31,7 +31,7 @@
     text-transform: uppercase;
     text-align: left;
     letter-spacing: .1em;
-    font-weight: 700;
+    font-weight: 900;
     color: var(--primary);
     /* 8px - 12px */
     margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
@@ -314,7 +314,7 @@
   }
   body.dark-mode #cs-contact .cs-bg-picture img {
     /* lets parent background-color bleed through and darken it */
-    opacity: .25;
+    opacity: .75;
   }
 }
 
@@ -323,7 +323,7 @@
 <--- -------------------------- -*/
 
       h1 {
-      font-weight: 400;
+      font-weight: 900;
       }
       h4 {
       margin: 15px 0 4px;

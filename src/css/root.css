@@ -580,7 +580,7 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
-    min-height: 30vh;
+    min-height: 35vh;
     padding-top: 3.125rem;
   }
   #int-hero:before {
