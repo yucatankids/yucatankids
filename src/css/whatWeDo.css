@@ -209,17 +209,17 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #sbs {
-    padding: 30px 0;
+    padding: 35px 0;
   }
   #sbs .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 75rem;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 2.5rem;
+    row-gap: 3.5rem;
   }
   #sbs .cs-left {
     /* scaling the font size with the view width */
@@ -243,11 +243,11 @@
     height: 100%;
     width: 100%;
     /* makes image act like a background image */
-    object-fit: cover;
+    object-fit: scale-down;
   }
   #sbs .cs-picture1 {
-    width: 32.625em;
-    height: 36.3125em;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
   }
@@ -269,7 +269,7 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     letter-spacing: .1em;
     font-weight: 700;
     color: var(--primary);
@@ -280,7 +280,7 @@
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
-    text-align: left;
+    text-align: center;
     max-width: 50rem;
     margin: 0 auto 1rem;
     color: var(--headerColor);
@@ -289,9 +289,9 @@
   #sbs .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    max-width: 46.875rem;
+    max-width: 22.875rem;
     margin: 0 auto;
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
@@ -399,13 +399,13 @@
   }
   #sbs-r .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 75rem;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 2.5rem;
+    row-gap: 3.5rem;
   }
   #sbs-r .cs-left {
     /* scaling the font size with the view width */
@@ -429,11 +429,11 @@
     height: 100%;
     width: 100%;
     /* makes image act like a background image */
-    object-fit: cover;
+    object-fit: scale-down;
   }
   #sbs-r .cs-picture1 {
-    width: 32.625em;
-    height: 36.3125em;
+    width: 100%;
+    height: 100%;
     right: 0;
     top: 0;
   }
@@ -466,7 +466,7 @@
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
-    text-align: left;
+    text-align: center;
     max-width: 50rem;
     margin: 0 auto 1rem;
     color: var(--headerColor);
@@ -475,9 +475,9 @@
   #sbs-r .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    max-width: 46.875rem;
+    max-width: 22.875rem;
     margin: 0 auto;
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
