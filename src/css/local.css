@@ -41,7 +41,7 @@
     object-fit: cover;
   }
   #sbs .cs-picture1 {
-    width: 32.625em;
+    width: 40.625em;
     height: 36.3125em;
     left: 0;
     top: 0;
@@ -226,8 +226,8 @@
     object-fit: cover;
   }
   #sbs-r .cs-picture1 {
-    width: 32.625em;
-    height: 36.3125em;
+    width: 43.625em;
+    height: 40.3125em;
     right: 0;
     top: 0;
   }
@@ -496,6 +496,15 @@
     max-width: 69rem;
     margin: auto;
   }
+
+  #reviews .cs-container#sponsors {
+    margin-top: -50px;
+  }
+
+  #reviews.become-sponsor {
+    padding: 130px 1rem 155px;
+  }
+
   #reviews .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
@@ -516,6 +525,9 @@
     margin: 0 auto 1rem;
     color: var(--headerColor);
     position: relative;
+  }
+  #reviews .cs-title#core-initiatives{
+    margin: 0 auto 3rem;
   }
   #reviews .cs-text {
     font-size: var(--bodyFontSize);
@@ -568,7 +580,7 @@
   #reviews .cs-item-p {
     font-size: 1rem;
     line-height: 1.5em;
-    margin: 0 0 1.25rem;
+    margin: 0 0 .5rem;
     padding-bottom: 1.25rem;
     color: var(--bodyTextColor);
     border-bottom: 1px solid #E8E9EC;
