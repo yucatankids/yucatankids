@@ -208,7 +208,7 @@
 
   .services .card h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 1.35em;
     font-weight: 700;
     color: #1a1a1a;
@@ -416,7 +416,7 @@
   }
   #cta .title {
     font-weight: 900;
-    font-size: min(9vw, 3rem);
+    font-size: min(7vw, 3rem);
     line-height: 1.20833333;
     color: #fff;
     position: relative;
@@ -718,7 +718,7 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
+    --headerFontSize: clamp(1.7375rem, 4.5vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: 100px 20px;
