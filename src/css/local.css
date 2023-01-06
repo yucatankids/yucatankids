@@ -482,30 +482,30 @@
   }
 }
 /*-- -------------------------- -->
-<---          Reviews           -->
+<---          section-header           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #reviews {
+  #section-header {
     /* Centers the button */
     text-align: center;
     padding: 55px 1rem 85px;
   }
-  #reviews .cs-container {
+  #section-header .cs-container {
     width: 100%;
     max-width: 69rem;
     margin: auto;
   }
 
-  #reviews .cs-container#sponsors {
+  #section-header .cs-container#sponsors {
     margin-top: -50px;
   }
 
-  #reviews.become-sponsor {
+  #section-header.become-sponsor {
     padding: 130px 1rem 155px;
   }
 
-  #reviews .cs-topper {
+  #section-header .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -516,7 +516,7 @@
     margin-bottom: 1rem;
     display: block;
   }
-  #reviews .cs-title {
+  #section-header .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -526,10 +526,10 @@
     color: var(--headerColor);
     position: relative;
   }
-  #reviews .cs-title#core-initiatives{
+  #section-header .cs-title#core-initiatives{
     margin: 0 auto 3rem;
   }
-  #reviews .cs-text {
+  #section-header .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5rem;
     text-align: center;
@@ -540,12 +540,12 @@
     margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
     color: var(--bodyTextColor);
   }
-  #reviews .cs-card-group {
+  #section-header .cs-card-group {
     padding: 0;
     /* 48px - 64px */
     margin: 0 auto clamp(3rem, 5vw, 4rem);
   }
-  #reviews .cs-item {
+  #section-header .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -566,10 +566,10 @@
     /* Prevents padding from affecting height & width */
     box-sizing: border-box;
   }
-  #reviews .cs-item:last-of-type {
+  #section-header .cs-item:last-of-type {
     margin-bottom: 0;
   }
-  #reviews .cs-item-img {
+  #section-header .cs-item-img {
     width: 6rem;
     height: 6rem;
     position: absolute;
@@ -577,7 +577,7 @@
     background: #ffffff;
     border-radius: 50%;
   }
-  #reviews .cs-item-p {
+  #section-header .cs-item-p {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0 0 .5rem;
@@ -585,7 +585,7 @@
     color: var(--bodyTextColor);
     border-bottom: 1px solid #E8E9EC;
   }
-  #reviews .cs-reviewer {
+  #section-header .cs-reviewer {
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
@@ -594,42 +594,42 @@
     display: block;
     color: var(--headerColor);
   }
-  #reviews .cs-desc {
+  #section-header .cs-desc {
     font-size: 0.875rem;
     font-weight: 400;
     color: var(--label);
     display: block;
   }
-  #reviews .cs-item-stars {
+  #section-header .cs-item-stars {
     width: 6rem;
     height: 1rem;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-  #reviews .cs-card-group {
+  #section-header .cs-card-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
-  #reviews .cs-item {
+  #section-header .cs-item {
     /* reset margin so it won't interfere with flexbox */
     margin: 0;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode #reviews .cs-title,
-  body.dark-mode #reviews .cs-text,
-  body.dark-mode #reviews .cs-item-p,
-  body.dark-mode #reviews .cs-reviewer {
+  body.dark-mode #section-header .cs-title,
+  body.dark-mode #section-header .cs-text,
+  body.dark-mode #section-header .cs-item-p,
+  body.dark-mode #section-header .cs-reviewer {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #reviews .cs-item {
+  body.dark-mode #section-header .cs-item {
     background: var(--medium);
   }
-  /* body.dark-mode #reviews .cs-desc {
+  /* body.dark-mode #section-header .cs-desc {
     color: var(--primaryLight);
   } */
 }

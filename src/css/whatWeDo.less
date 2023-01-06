@@ -1,5 +1,5 @@
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       Side By Side  A      -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -217,7 +217,7 @@
 }
 
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       Side By Side B       -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -429,114 +429,7 @@
             }
         }
     }
-}
-
-/*-- -------------------------- -->
-<---          Gallery           -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px - Contains hover animation */
-@media only screen and (min-width: 0em) {
-
-    #gallery {
-        /* Centers button */
-        text-align: center;
-        padding: var(--sectionPadding);
-        position: relative;
-        /* Prevents overflow from the image going off screen */
-        overflow: hidden;
-        .cs-container {
-            width: 100%;
-            max-width: 1322/16em;
-            margin: auto;
-        }
-
-        .cs-image-group {
-            /* used rem so it doesn't scale with the font size of on parent */
-            font-size:~"min(1.1vw, 1em)";
-            width: 100%;
-            max-width: 1322/16em;
-            padding: 0;
-            margin: 0 auto 60/16rem;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 30/16em;
-        }
-
-        .cs-row {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 30/16em;
-        }
-
-        .cs-picture {
-            position: relative;
-            display: block;
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
-        .cs-row-1 {
-            .cs-picture-1 {
-                width: 420/16em;
-                height: 567/16em;
-            }
-
-            .cs-picture-2 {
-                width: 420/16em;
-                height: 629/16em;
-            }
-
-            .cs-picture-3 {
-                width: 420/16em;
-                height: 512/16em;
-            }
-        }
-
-        .cs-row-2 {
-            .cs-picture-1 {
-                width: 420/16em;
-                height: 492/16em;
-            }
-
-            .cs-picture-2 {
-                width: 420/16em;
-                height: 517/16em;
-            }
-
-            .cs-picture-3 {
-                width: 420/16em;
-                height: 629/16em;
-            }
-        }
-
-        .cs-row-3 {
-            .cs-picture-1 {
-                width: 420/16em;
-                height: 625/16em;
-            }
-
-            .cs-picture-2 {
-                width: 420/16em;
-                height: 452/16em;
-            }
-
-            .cs-picture-3 {
-                width: 420/16em;
-                height: 629/16em;
-            }
-        }
-    }
-}                           
+}                          
 
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
@@ -681,7 +574,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
-    .services {
+    .card-container {
         border-radius: 5/16em;
         margin: 0;
         // margin-top: -167/16em;
@@ -744,7 +637,7 @@
 
 /* Inbetween */
 @media only screen and (min-width: 768px) {
-    .services {
+    .card-container {
         font-size: ~"min(1.8vw, 1em)";
         display: flex;
         justify-content: space-between;
@@ -761,7 +654,7 @@
 /* Dark mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #services {
+        #card-container {
             background: var(--dark);
 
             h2 {
@@ -779,7 +672,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
 
-    #reviews {
+    #section-header {
         /* Centers the button */
         text-align: center;
         padding: 60px 1rem;
@@ -899,7 +792,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-    #reviews {
+    #section-header {
         .cs-card-group {
             display: flex;
             justify-content: space-between;
@@ -917,7 +810,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #reviews {
+        #section-header {
 
             .cs-title,
             .cs-text,

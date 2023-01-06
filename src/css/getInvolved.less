@@ -1,11 +1,11 @@
 /*-- -------------------------- -->
-<---          Reviews   1       -->
+<---      section-header        -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
 
-    #reviews {
+    #section-header {
         /* Centers the button */
         text-align: center;
         padding: 60px 1rem;
@@ -125,7 +125,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-    #reviews {
+    #section-header {
         .cs-card-group {
             display: flex;
             justify-content: space-between;
@@ -143,7 +143,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #reviews {
+        #section-header {
 
             .cs-title,
             .cs-text,
@@ -163,136 +163,6 @@
     }
 }
 
-/*-- -------------------------- -->
-<---           Reviews          -->
-<--- -------------------------- -*/
-
-/* Mobile */
-@media only screen and (min-width: 0em) {
-    #reviews {
-        // padding-top: 120/16rem;
-        padding-bottom: 50/16rem;
-        margin: auto;
-
-        .container {
-            width: 96%;
-            max-width: 1320/16rem;
-        }
-
-        .review {
-            padding: 64/16rem 30/16rem 18/16rem 30/16rem;
-            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-            width: 100%;
-            max-width: 410/16rem;
-            margin: auto;
-            margin-bottom: 100/16rem;
-            border-radius: 5/16rem;
-            position: relative;
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-
-            .profile {
-                display: block;
-                height: 99/16rem;
-                width: 99/16rem;
-                margin-left: 0;
-                border-radius: 50%;
-                margin-bottom: 16/16rem;
-                position: absolute;
-                left: 30/16rem;
-                top: -51/16rem;
-            }
-
-            p {
-                line-height: 24/18;
-                margin-bottom: 28/16rem;
-                text-align: left;
-            }
-
-            .star-group {
-                border-top: 1px solid #E7E7E7;
-                padding-top: 16/16rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: nowrap;
-                margin-top: auto;
-
-                .name {
-                    color: #1A1A1A;
-                    line-height: 24/16rem;
-                    text-align: left;
-                    font-weight: bold;
-                    display: block;
-                }
-
-                .desc {
-                    color: #575757;
-                    font-weight: 400;
-                    display: block;
-                }
-
-                img {
-                    display: block;
-                    width: 91/16rem;
-                    height: 15/16rem;
-                    margin: 0;
-                }
-            }
-        }
-    }
-}
-
-/* Tablet */
-@media only screen and (min-width: 48em) {
-
-    #reviews {
-        // padding-top: 150/16rem;
-        padding-bottom: 50/16rem;
-        
-        .container {
-            font-size:~"min(1.4vw, 1em)";
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 0;
-            column-gap: 30/16rem;
-        }
-
-        .review {
-            margin: 0;
-            margin-bottom: 150/16rem;
-
-            &:last-of-type {
-                margin-bottom: 150/16rem;
-            }
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        #reviews {
-            .review {
-                background: var(--medium);
-
-                .name {
-                    color: #fff;
-                }
-
-                .desc {
-                    color: #fff;
-                    opacity: .7;
-                }
-            }
-        }
-    }
-}
 
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
@@ -431,13 +301,13 @@
 }
 
 /*-- -------------------------- -->
-<---          Services          -->
+<---          card-container          -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
-    .services {
+    .card-container {
         border-radius: 5/16em;
         margin: auto;
         margin-top: -167/16em;
@@ -500,7 +370,7 @@
 
 /* Inbetween */
 @media only screen and (min-width: 768px) {
-    .services {
+    .card-container {
         font-size: ~"min(1.8vw, 1em)";
         display: flex;
         justify-content: space-between;
@@ -516,7 +386,7 @@
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-    .services {
+    .card-container {
         padding: 50/16em 80/16em;
 
         .card {
@@ -528,7 +398,7 @@
 /* Dark mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #services {
+        #card-container {
             background: var(--medium);
 
             picture {
@@ -769,7 +639,7 @@
 }
 
 /*-- -------------------------- -->
-<---    Volunteer Contact       -->
+<---    Volunteer Form          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -785,7 +655,7 @@
         --sectionPadding: 30px 0;
     }
 
-    #cs-contact {
+    #volunteer-form {
         font-family: 'Roboto', 'Arial', sans-serif;
         padding: 0 20px 100px;
 
@@ -1031,7 +901,7 @@
 
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
-    #cs-contact {
+    #volunteer-form {
         #cs-form {
             display: flex;
             justify-content: space-between;
@@ -1051,7 +921,7 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-    #cs-contact {
+    #volunteer-form {
         .cs-container {
             max-width: 1280/16rem;
             display: flex;
@@ -1092,7 +962,7 @@
 
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25em) {
-    #cs-contact {
+    #volunteer-form {
         #cs-form {
             column-gap: 0/16rem;
 
@@ -1114,7 +984,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #cs-contact {
+        #volunteer-form {
             .cs-text,
             .cs-title {
                 color: var(--bodyTextColorWhite);

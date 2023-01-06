@@ -12,20 +12,20 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: 100px 20px;
   }
-  #cs-contact {
+  #cs-wrapper {
     font-family: 'Roboto', 'Arial', sans-serif;
     padding: var(--sectionPadding);
   }
-  #cs-contact .cs-container {
+  #cs-wrapper .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 50rem;
     margin: auto;
   }
-  #cs-contact .cs-content {
+  #cs-wrapper .cs-content {
     width: 100%;
   }
-  #cs-contact .cs-topper {
+  #cs-wrapper .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -37,7 +37,7 @@
     margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
     display: block;
   }
-  #cs-contact .cs-title {
+  #cs-wrapper .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -47,7 +47,7 @@
     color: var(--headerColor);
     position: relative;
   }
-  #cs-contact .cs-text {
+  #cs-wrapper .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: left;
@@ -59,10 +59,10 @@
     margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
     color: var(--bodyTextColor);
   }
-  #cs-contact #cs-form {
-    margin-bottom: 30px 0;
+  #cs-wrapper #cs-form {
+    margin-bottom: 30px;
   }
-  #cs-contact #cs-form label {
+  #cs-wrapper #cs-form label {
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
@@ -74,12 +74,12 @@
     align-items: flex-start;
     flex-direction: column;
   }
-  #cs-contact #cs-form .cs-label-message {
+  #cs-wrapper #cs-form .cs-label-message {
     /* 32px - 48px */
     margin-bottom: clamp(2rem, 6.3vw, 3rem);
   }
-  #cs-contact #cs-form input,
-  #cs-contact #cs-form textarea {
+  #cs-wrapper #cs-form input,
+  #cs-wrapper #cs-form textarea {
     font-size: 1rem;
     width: 100%;
     height: 4rem;
@@ -91,19 +91,19 @@
     box-sizing: border-box;
     transition: border .3s;
   }
-  #cs-contact #cs-form input:hover,
-  #cs-contact #cs-form textarea:hover {
+  #cs-wrapper #cs-form input:hover,
+  #cs-wrapper #cs-form textarea:hover {
     border: 1px solid var(--primary);
   }
-  #cs-contact #cs-form textarea {
+  #cs-wrapper #cs-form textarea {
     font-family: inherit;
     padding-top: 1.25rem;
     min-height: 7.5rem;
   }
-  #cs-contact #cs-form .cs-button-solid {
+  #cs-wrapper #cs-form .cs-button-solid {
     width: 100%;
   }
-  #cs-contact .cs-button-solid {
+  #cs-wrapper .cs-button-solid {
     font-size: 1rem;
     line-height: 3.5rem;
     text-decoration: none;
@@ -122,7 +122,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #cs-contact .cs-button-solid:before {
+  #cs-wrapper .cs-button-solid:before {
     content: '';
     position: absolute;
     height: 100%;
@@ -135,14 +135,14 @@
     border-radius: 0.25rem;
     transition: width .3s;
   }
-  #cs-contact .cs-button-solid:hover {
+  #cs-wrapper .cs-button-solid:hover {
     color: var(--bodyTextColorWhite);
     cursor: pointer;
   }
-  #cs-contact .cs-button-solid:hover:before {
+  #cs-wrapper .cs-button-solid:hover:before {
     width: 100%;
   }
-  #cs-contact .cs-right-section {
+  #cs-wrapper .cs-right-section {
     position: relative;
     height: 20rem;
     /* 24px - 40px top & bottom */
@@ -155,7 +155,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  #cs-contact .cs-header {
+  #cs-wrapper .cs-header {
     /* 16px - 20px */
     font-size: clamp(1rem, 3vw, 1.25rem);
     line-height: 1.2em;
@@ -164,7 +164,7 @@
     color: var(--bodyTextColorWhite);
     display: block;
   }
-  #cs-contact .cs-link {
+  #cs-wrapper .cs-link {
     /* 16px - 20px */
     font-size: clamp(1rem, 3vw, 1.25rem);
     line-height: 1.2em;
@@ -174,7 +174,7 @@
     display: block;
     position: relative;
   }
-  #cs-contact .cs-link:before {
+  #cs-wrapper .cs-link:before {
     /* Animated underline */
     content: '';
     width: 0%;
@@ -188,17 +188,17 @@
     left: 0;
     transition: width .3s;
   }
-  #cs-contact .cs-link:hover:before {
+  #cs-wrapper .cs-link:hover:before {
     width: 100%;
   }
-  #cs-contact .cs-link:last-of-type {
+  #cs-wrapper .cs-link:last-of-type {
     margin-bottom: 0;
   }
-  #cs-contact .cs-block {
+  #cs-wrapper .cs-block {
     /* sends second address line to the bottom on its own line */
     display: block;
   }
-  #cs-contact .cs-bg-picture {
+  #cs-wrapper .cs-bg-picture {
     width: 100%;
     height: 100%;
     display: block;
@@ -208,7 +208,7 @@
     z-index: -1;
     transition: transform .6s;
   }
-  #cs-contact .cs-bg-picture:before {
+  #cs-wrapper .cs-bg-picture:before {
     /* background color overlay */
     content: '';
     position: absolute;
@@ -221,7 +221,7 @@
     background-color: rgba(0, 0, 0, 0.55);
     opacity: .1;
   }
-  #cs-contact .cs-bg-picture img {
+  #cs-wrapper .cs-bg-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -233,35 +233,35 @@
 }
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
-  #cs-contact #cs-form {
+  #cs-wrapper #cs-form {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  #cs-contact #cs-form label {
+  #cs-wrapper #cs-form label {
     width: 48%;
   }
-  #cs-contact #cs-form .cs-label-message {
+  #cs-wrapper #cs-form .cs-label-message {
     width: 100%;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-  #cs-contact .cs-container {
+  #cs-wrapper .cs-container {
     max-width: 80rem;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 5rem;
   }
-  #cs-contact #cs-form {
+  #cs-wrapper #cs-form {
     max-width: 39.375rem;
   }
-  #cs-contact #cs-form label {
+  #cs-wrapper #cs-form label {
     width: 100%;
   }
-  #cs-contact .cs-right-section {
+  #cs-wrapper .cs-right-section {
     /* changes to 578px at 1300px wide */
     height: 42.875rem;
     width: 40%;
@@ -269,97 +269,53 @@
     /* prevents flexbox from squishing it */
     flex: none;
   }
-  #cs-contact .cs-right-section:hover .cs-bg-picture {
+  #cs-wrapper .cs-right-section:hover .cs-bg-picture {
     transform: scale(1.1);
   }
-  #cs-contact .cs-block {
+  #cs-wrapper .cs-block {
     /* goes back to inline so it stays "in line" with the rest of the text */
     display: inline-block;
   }
 }
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25em) {
-  #cs-contact #cs-form {
+  #cs-wrapper #cs-form {
     column-gap: 0rem;
   }
-  #cs-contact #cs-form label {
+  #cs-wrapper #cs-form label {
     width: 48%;
     max-width: 19.0625rem;
   }
-  #cs-contact #cs-form .cs-label-message {
+  #cs-wrapper #cs-form .cs-label-message {
     max-width: 100%;
   }
-  #cs-contact .cs-right-section {
+  #cs-wrapper .cs-right-section {
     height: 36.125rem;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode #cs-contact .cs-text,
-  body.dark-mode #cs-contact .cs-title {
+  body.dark-mode #cs-wrapper .cs-text,
+  body.dark-mode #cs-wrapper .cs-title {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #cs-contact #cs-form label,
-  body.dark-mode #cs-contact #cs-form input,
-  body.dark-mode #cs-contact #cs-form textarea {
+  body.dark-mode #cs-wrapper #cs-form label,
+  body.dark-mode #cs-wrapper #cs-form input,
+  body.dark-mode #cs-wrapper #cs-form textarea {
     background-color: transparent;
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #cs-contact #cs-form label::placeholder,
-  body.dark-mode #cs-contact #cs-form input::placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::placeholder {
+  body.dark-mode #cs-wrapper #cs-form label::placeholder,
+  body.dark-mode #cs-wrapper #cs-form input::placeholder,
+  body.dark-mode #cs-wrapper #cs-form textarea::placeholder {
     /* lighten up the color of the text by 40%*/
     filter: brightness(1.4);
   }
-  body.dark-mode #cs-contact .cs-bg-picture {
+  body.dark-mode #cs-wrapper .cs-bg-picture {
     background-color: #000;
   }
-  body.dark-mode #cs-contact .cs-bg-picture img {
+  body.dark-mode #cs-wrapper .cs-bg-picture img {
     /* lets parent background-color bleed through and darken it */
     opacity: .75;
   }
 }
-
-/*-- -------------------------- -->
-<---          Volunteer         -->
-<--- -------------------------- -*/
-
-      h1 {
-      font-weight: 900;
-      }
-      h4 {
-      margin: 15px 0 4px;
-      }
-      input {
-      width: calc(100% - 10px);
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      vertical-align: middle;
-      }
-      input:hover, textarea:hover {
-      outline: none;
-      border: 1px solid #095484;
-      }
-      th, td {
-      width: 15%;
-      padding: 15px 0;
-      border-bottom: 1px solid #ccc;
-      text-align: center;
-      vertical-align: unset;
-      line-height: 18px;
-      font-weight: 400;
-      word-break: break-all;
-      }
-      .first-col {
-      width: 16%;
-      text-align: left;
-      }
-      table {
-      width: 100%;
-      }
-      @media (min-width: 568px) {
-      th, td {
-      word-break: keep-all;
-      }
-      }

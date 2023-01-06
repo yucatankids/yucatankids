@@ -41,7 +41,7 @@ eleventyComputed:
     <article class="blog-article">
     <!--Main Article Image-->
     <picture class="blog-mainImage">
-        <img id="myImg" src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async" />
+        <img id="blog-image" src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async" />
     </picture>
     <!--Article Info-->
     <div class="article-group">
@@ -67,9 +67,8 @@ eleventyComputed:
         {{ content | safe }}
     </section>
     </article>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- <span class="close">&times;</span> -->
+    <!-- Modal for Main Blog Image -->
+    <div id="modal-id" class="modal">
         <img class="modal-content" id="img01">
         <div id="caption"></div>
         <span class="close">&times;</span>

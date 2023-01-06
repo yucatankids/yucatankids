@@ -15,7 +15,7 @@
         --sectionPadding: 30px 10px;
     }
 
-    #cs-contact {
+    #cs-wrapper {
         font-family: 'Roboto', 'Arial', sans-serif;
         padding: var(--sectionPadding);
 
@@ -63,7 +63,7 @@
             max-width: clamp(25.25rem, 30vw, 32.625rem);
             margin: 0 auto 0 0;
             /* 40px - 48px */
-            margin-bottom: 30px 0;
+            margin-bottom: 30px;
             color: var(--bodyTextColor);
         }
 
@@ -263,7 +263,7 @@
 
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
-    #cs-contact {
+    #cs-wrapper {
         #cs-form {
             display: flex;
             justify-content: space-between;
@@ -283,7 +283,7 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-    #cs-contact {
+    #cs-wrapper {
         .cs-container {
             max-width: 1280/16rem;
             display: flex;
@@ -323,7 +323,7 @@
 
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25em) {
-    #cs-contact {
+    #cs-wrapper {
         #cs-form {
             column-gap: 0/16rem;
             label {
@@ -345,7 +345,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #cs-contact {
+        #cs-wrapper {
             .cs-text, .cs-title {
                 color: var(--bodyTextColorWhite);
             }

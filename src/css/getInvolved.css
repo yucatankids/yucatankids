@@ -1,21 +1,21 @@
 /*-- -------------------------- -->
-<---          Reviews 1         -->
+<---       section-header       -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #reviews {
+  #section-header {
     /* Centers the button */
     text-align: center;
     padding: 60px 1rem;
   }
 
-  #reviews .cs-container {
+  #section-header .cs-container {
     width: 100%;
     max-width: 69rem;
     margin: auto;
   }
 
-  #reviews .cs-topper {
+  #section-header .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -27,7 +27,7 @@
     display: block;
   }
 
-  #reviews .cs-title {
+  #section-header .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -38,7 +38,7 @@
     position: relative;
   }
 
-  #reviews .cs-text {
+  #section-header .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5rem;
     text-align: center;
@@ -50,13 +50,13 @@
     color: var(--bodyTextColor);
   }
 
-  #reviews .cs-card-group {
+  #section-header .cs-card-group {
     padding: 0;
     /* 48px - 64px */
     margin: 0 auto clamp(3rem, 5vw, 4rem);
   }
 
-  #reviews .cs-item {
+  #section-header .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -78,11 +78,11 @@
     box-sizing: border-box;
   }
 
-  #reviews .cs-item:last-of-type {
+  #section-header .cs-item:last-of-type {
     margin-bottom: 0;
   }
 
-  #reviews .cs-item-img {
+  #section-header .cs-item-img {
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -91,7 +91,7 @@
     border-radius: 50%;
   }
 
-  #reviews .cs-item-p {
+  #section-header .cs-item-p {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0 0 1.25rem;
@@ -100,7 +100,7 @@
     border-bottom: 1px solid #E8E9EC;
   }
 
-  #reviews .cs-reviewer {
+  #section-header .cs-reviewer {
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
@@ -110,14 +110,14 @@
     color: var(--headerColor);
   }
 
-  #reviews .cs-desc {
+  #section-header .cs-desc {
     font-size: 0.875rem;
     font-weight: 400;
     color: var(--label);
     display: block;
   }
 
-  #reviews .cs-item-stars {
+  #section-header .cs-item-stars {
     width: 6rem;
     height: 1rem;
   }
@@ -125,14 +125,14 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-  #reviews .cs-card-group {
+  #section-header .cs-card-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
 
-  #reviews .cs-item {
+  #section-header .cs-item {
     /* reset margin so it won't interfere with flexbox */
     margin: 0;
   }
@@ -141,28 +141,28 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
 
-  body.dark-mode #reviews .cs-title,
-  body.dark-mode #reviews .cs-text,
-  body.dark-mode #reviews .cs-item-p,
-  body.dark-mode #reviews .cs-reviewer {
+  body.dark-mode #section-header .cs-title,
+  body.dark-mode #section-header .cs-text,
+  body.dark-mode #section-header .cs-item-p,
+  body.dark-mode #section-header .cs-reviewer {
     color: var(--bodyTextColorWhite);
   }
 
-  body.dark-mode #reviews .cs-item {
+  body.dark-mode #section-header .cs-item {
     background: var(--medium);
   }
 
-  /* body.dark-mode #reviews .cs-desc {
+  /* body.dark-mode #section-header .cs-desc {
     color: var(--primaryLight);
   } */
 }
 
 /*-- -------------------------- -->
-<---          Services          -->
+<---      card-container          -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  .services {
+  .card-container {
     border-radius: 0.3125em;
     margin: auto;
     margin-top: -10.4375em;
@@ -177,7 +177,7 @@
     margin-bottom: 5.125em;
   }
 
-  .services .card {
+  .card-container .card {
     display: block;
     width: 100%;
     max-width: 22.3125em;
@@ -185,11 +185,11 @@
     margin-bottom: 3.125em;
   }
 
-  .services .card:last-of-type {
+  .card-container .card:last-of-type {
     margin-bottom: 0;
   }
 
-  .services .card picture {
+  .card-container .card picture {
     background: #ffffff;
     width: 6.5em;
     height: 6.5em;
@@ -201,12 +201,12 @@
     border-radius: 50%;
   }
 
-  .services .card picture img {
+  .card-container .card picture img {
     width: 6em;
     height: 6em;
   }
 
-  .services .card h2 {
+  .card-container .card h2 {
     text-align: center;
     font-size: 1.6em;
     line-height: 1.35em;
@@ -215,7 +215,7 @@
     margin-bottom: 0.65em;
   }
 
-  .services .card p {
+  .card-container .card p {
     text-align: center;
     line-height: 1.33333333em;
     width: 100%;
@@ -225,7 +225,7 @@
 
 /* Inbetween */
 @media only screen and (min-width: 768px) {
-  .services {
+  .card-container {
     font-size: min(1.8vw, 1em);
     display: flex;
     justify-content: space-evenly;
@@ -233,7 +233,7 @@
     width: 98%;
   }
 
-  .services .card {
+  .card-container .card {
     margin: 0;
     max-width: 20.3125em;
   }
@@ -241,139 +241,31 @@
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-  .services {
+  .card-container {
     padding: 3.125em 5em;
   }
 
-  .services .card {
+  .card-container .card {
     max-width: 22.3125em;
   }
 }
 
 /* Dark mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode #services {
+  body.dark-mode #card-container {
     background: var(--medium);
   }
 
-  body.dark-mode #services picture {
+  body.dark-mode #card-container picture {
     background: #ffffff;
   }
 
-  body.dark-mode #services h2 {
+  body.dark-mode #card-container h2 {
     color: #fff;
     font-weight: bold;
   }
 }
-/*-- -------------------------- -->
-<---           Reviews          -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  #reviews {
-    /* padding-top: 7.5rem; */
-    padding-bottom: 3.125rem;
-    margin: auto;
-  }
-  #reviews .container {
-    width: 96%;
-    max-width: 82.5rem;
-  }
-  #reviews .review {
-    padding: 4rem 1.875rem 1.125rem 1.875rem;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-    width: 100%;
-    max-width: 25.625rem;
-    margin: auto;
-    margin-bottom: 6.25rem;
-    border-radius: 0.3125rem;
-    position: relative;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-  }
-  #reviews .review:last-of-type {
-    margin-bottom: 0;
-  }
-  #reviews .review .profile {
-    display: block;
-    height: 6.1875rem;
-    width: 6.1875rem;
-    margin-left: 0;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    position: absolute;
-    left: 1.875rem;
-    top: -3.1875rem;
-  }
-  #reviews .review p {
-    line-height: 1.33333333;
-    margin-bottom: 1.75rem;
-    text-align: left;
-  }
-  #reviews .review .star-group {
-    border-top: 1px solid #E7E7E7;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-top: auto;
-  }
-  #reviews .review .star-group .name {
-    color: #1A1A1A;
-    line-height: 1.5rem;
-    text-align: left;
-    font-weight: bold;
-    display: block;
-  }
-  #reviews .review .star-group .desc {
-    color: #575757;
-    font-weight: 400;
-    display: block;
-  }
-  #reviews .review .star-group img {
-    display: block;
-    width: 5.6875rem;
-    height: 0.9375rem;
-    margin: 0;
-  }
-}
-/* Tablet */
-@media only screen and (min-width: 48em) {
-  #reviews {
-    /* padding-top: 9.375rem; */
-    padding-bottom: 3.125rem;
-  }
-  #reviews .container {
-    font-size: min(1.4vw, 1em);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-    column-gap: 1.875rem;
-  }
-  #reviews .review {
-    margin: 0;
-    margin-bottom: 9.375rem;
-  }
-  #reviews .review:last-of-type {
-    margin-bottom: 9.375rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #reviews .review {
-    background: var(--medium);
-  }
-  body.dark-mode #reviews .review .name {
-    color: #fff;
-  }
-  body.dark-mode #reviews .review .desc {
-    color: #fff;
-    opacity: .7;
-  }
-}
+
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
@@ -707,10 +599,7 @@
 }
 
 /*-- -------------------------- -->
-<---      Volunteer Contact     -->
-<--- -------------------------- -*/
-/*-- -------------------------- -->
-<---          Contact           -->
+<---      Volunteer Form        -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -724,23 +613,23 @@
     --sectionPadding: 100px 20px;
   }
 
-  #cs-contact {
+  #volunteer-form {
     font-family: 'Roboto', 'Arial', sans-serif;
     padding: var(--sectionPadding);
   }
 
-  #cs-contact .cs-container {
+  #volunteer-form .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 50rem;
     margin: auto;
   }
 
-  #cs-contact .cs-content {
+  #volunteer-form .cs-content {
     width: 100%;
   }
 
-  #cs-contact .cs-topper {
+  #volunteer-form .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -753,7 +642,7 @@
     display: block;
   }
 
-  #cs-contact .cs-title {
+  #volunteer-form .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -764,7 +653,7 @@
     position: relative;
   }
 
-  #cs-contact .cs-text {
+  #volunteer-form .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: left;
@@ -777,11 +666,11 @@
     color: var(--bodyTextColor);
   }
 
-  #cs-contact #cs-form {
+  #volunteer-form #cs-form {
     margin-bottom: 30px;
   }
 
-  #cs-contact #cs-form label {
+  #volunteer-form #cs-form label {
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
@@ -795,8 +684,8 @@
   }
 
 
-  #cs-contact #cs-form input.text,
-  #cs-contact #cs-form textarea {
+  #volunteer-form #cs-form input.text,
+  #volunteer-form #cs-form textarea {
     font-size: 1rem;
     width: 100%;
     height: 3rem;
@@ -809,22 +698,22 @@
     transition: border .3s;
   }
 
-  #cs-contact #cs-form input:hover,
-  #cs-contact #cs-form textarea:hover {
+  #volunteer-form #cs-form input:hover,
+  #volunteer-form #cs-form textarea:hover {
     border: 1px solid var(--primary);
   }
 
-  #cs-contact #cs-form textarea {
+  #volunteer-form #cs-form textarea {
     font-family: inherit;
     padding-top: 1.25rem;
     min-height: 7.5rem;
   }
 
-  #cs-contact #cs-form .cs-button-solid {
+  #volunteer-form #cs-form .cs-button-solid {
     width: 100%;
   }
 
-  #cs-contact .cs-button-solid {
+  #volunteer-form .cs-button-solid {
     font-size: 1rem;
     line-height: 3.5rem;
     text-decoration: none;
@@ -844,7 +733,7 @@
     box-sizing: border-box;
   }
 
-  #cs-contact .cs-button-solid:before {
+  #volunteer-form .cs-button-solid:before {
     content: '';
     position: absolute;
     height: 100%;
@@ -858,16 +747,16 @@
     transition: width .3s;
   }
 
-  #cs-contact .cs-button-solid:hover {
+  #volunteer-form .cs-button-solid:hover {
     color: var(--bodyTextColorWhite);
     cursor: pointer;
   }
 
-  #cs-contact .cs-button-solid:hover:before {
+  #volunteer-form .cs-button-solid:hover:before {
     width: 100%;
   }
 
-  #cs-contact .cs-right-section {
+  #volunteer-form .cs-right-section {
     position: relative;
     height: 20rem;
     /* 24px - 40px top & bottom */
@@ -881,7 +770,7 @@
     align-items: flex-start;
   }
 
-  #cs-contact .cs-header {
+  #volunteer-form .cs-header {
     /* 16px - 20px */
     font-size: clamp(1rem, 3vw, 1.25rem);
     line-height: 1.2em;
@@ -891,7 +780,7 @@
     display: block;
   }
 
-  #cs-contact .cs-link {
+  #volunteer-form .cs-link {
     /* 16px - 20px */
     font-size: clamp(1rem, 3vw, 1.25rem);
     line-height: 1.2em;
@@ -902,7 +791,7 @@
     position: relative;
   }
 
-  #cs-contact .cs-link:before {
+  #volunteer-form .cs-link:before {
     /* Animated underline */
     content: '';
     width: 0%;
@@ -917,20 +806,20 @@
     transition: width .3s;
   }
 
-  #cs-contact .cs-link:hover:before {
+  #volunteer-form .cs-link:hover:before {
     width: 100%;
   }
 
-  #cs-contact .cs-link:last-of-type {
+  #volunteer-form .cs-link:last-of-type {
     margin-bottom: 0;
   }
 
-  #cs-contact .cs-block {
+  #volunteer-form .cs-block {
     /* sends second address line to the bottom on its own line */
     display: block;
   }
 
-  #cs-contact .cs-bg-picture {
+  #volunteer-form .cs-bg-picture {
     width: 100%;
     height: 100%;
     display: block;
@@ -941,7 +830,7 @@
     transition: transform .6s;
   }
 
-  #cs-contact .cs-bg-picture:before {
+  #volunteer-form .cs-bg-picture:before {
     /* background color overlay */
     content: '';
     position: absolute;
@@ -955,7 +844,7 @@
     opacity: .1;
   }
 
-  #cs-contact .cs-bg-picture img {
+  #volunteer-form .cs-bg-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -968,25 +857,25 @@
 
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
-  #cs-contact #cs-form {
+  #volunteer-form #cs-form {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
   }
 
-  #cs-contact #cs-form label {
+  #volunteer-form #cs-form label {
     width: 48%;
   }
 
-  #cs-contact #cs-form .cs-label-message {
+  #volunteer-form #cs-form .cs-label-message {
     width: 100%;
   }
 }
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-  #cs-contact .cs-container {
+  #volunteer-form .cs-container {
     max-width: 80rem;
     display: flex;
     justify-content: flex-end;
@@ -994,15 +883,15 @@
     gap: 5rem;
   }
 
-  #cs-contact #cs-form {
+  #volunteer-form #cs-form {
     max-width: 39.375rem;
   }
 
-  #cs-contact #cs-form label {
+  #volunteer-form #cs-form label {
     width: 100%;
   }
 
-  #cs-contact .cs-right-section {
+  #volunteer-form .cs-right-section {
     /* changes to 578px at 1300px wide */
     height: 42.875rem;
     width: 40%;
@@ -1011,11 +900,11 @@
     flex: none;
   }
 
-  #cs-contact .cs-right-section:hover .cs-bg-picture {
+  #volunteer-form .cs-right-section:hover .cs-bg-picture {
     transform: scale(1.1);
   }
 
-  #cs-contact .cs-block {
+  #volunteer-form .cs-block {
     /* goes back to inline so it stays "in line" with the rest of the text */
     display: inline-block;
   }
@@ -1023,19 +912,19 @@
 
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25em) {
-  #cs-contact #cs-form {
+  #volunteer-form #cs-form {
     column-gap: 0rem;
   }
 
-  #cs-contact #cs-form label {
+  #volunteer-form #cs-form label {
     max-width: 19.0625rem;
   }
 
-  #cs-contact #cs-form .cs-label-message {
+  #volunteer-form #cs-form .cs-label-message {
     max-width: 100%;
   }
 
-  #cs-contact .cs-right-section {
+  #volunteer-form .cs-right-section {
     height: 36.125rem;
   }
 }
@@ -1043,37 +932,33 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
 
-  body.dark-mode #cs-contact .cs-text,
-  body.dark-mode #cs-contact .cs-title {
+  body.dark-mode #volunteer-form .cs-text,
+  body.dark-mode #volunteer-form .cs-title {
     color: var(--bodyTextColorWhite);
   }
 
-  body.dark-mode #cs-contact #cs-form label,
-  body.dark-mode #cs-contact #cs-form input,
-  body.dark-mode #cs-contact #cs-form textarea {
+  body.dark-mode #volunteer-form #cs-form label,
+  body.dark-mode #volunteer-form #cs-form input,
+  body.dark-mode #volunteer-form #cs-form textarea {
     background-color: transparent;
     color: var(--bodyTextColorWhite);
   }
 
-  body.dark-mode #cs-contact #cs-form label::placeholder,
-  body.dark-mode #cs-contact #cs-form input::placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::placeholder {
+  body.dark-mode #volunteer-form #cs-form label::placeholder,
+  body.dark-mode #volunteer-form #cs-form input::placeholder,
+  body.dark-mode #volunteer-form #cs-form textarea::placeholder {
     /* lighten up the color of the text by 40%*/
     filter: brightness(1.4);
   }
 
-  body.dark-mode #cs-contact .cs-bg-picture {
+  body.dark-mode #volunteer-form .cs-bg-picture {
     background-color: #000;
   }
-  body.dark-mode #cs-contact .cs-bg-picture img {
+  body.dark-mode #volunteer-form .cs-bg-picture img {
     /* lets parent background-color bleed through and darken it */
     opacity: .75;
   }
 }
-
-/*-- -------------------------- -->
-<---          Volunteer         -->
-<--- -------------------------- -*/
 
 input[type=checkbox] {
   accent-color: var(--primary);

@@ -1,210 +1,5 @@
 /*-- -------------------------- -->
-<---          Gallery           -->
-<--- -------------------------- -*/
-/* Mobile - 360px - Contains hover animation */
-@media only screen and (min-width: 0em) {
-  #gallery {
-    /* Centers button */
-    text-align: center;
-    padding: var(--sectionPadding);
-    position: relative;
-    /* Prevents overflow from the image going off screen */
-    overflow: hidden;
-  }
-  #gallery .cs-container {
-    width: 100%;
-    max-width: 82.625em;
-    margin: auto;
-  }
-  #gallery .cs-image-group {
-    /* used rem so it doesn't scale with the font size of on parent */
-    font-size: min(1.1vw, 1em);
-    width: 100%;
-    max-width: 82.625em;
-    padding: 0;
-    margin: 0 auto 3.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.875em;
-  }
-  #gallery .cs-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.875em;
-  }
-  #gallery .cs-picture {
-    position: relative;
-    display: block;
-  }
-  #gallery .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #gallery .cs-row-1 .cs-picture-1 {
-    width: 26.25em;
-    height: 35.4375em;
-  }
-  #gallery .cs-row-1 .cs-picture-2 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #gallery .cs-row-1 .cs-picture-3 {
-    width: 26.25em;
-    height: 32em;
-  }
-  #gallery .cs-row-2 .cs-picture-1 {
-    width: 26.25em;
-    height: 30.75em;
-  }
-  #gallery .cs-row-2 .cs-picture-2 {
-    width: 26.25em;
-    height: 32.3125em;
-  }
-  #gallery .cs-row-2 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #gallery .cs-row-3 .cs-picture-1 {
-    width: 26.25em;
-    height: 39.0625em;
-  }
-  #gallery .cs-row-3 .cs-picture-2 {
-    width: 26.25em;
-    height: 28.25em;
-  }
-  #gallery .cs-row-3 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-}
-/*-- -------------------------- -->
-<---    Final Call To Action    -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  #cta {
-    position: relative;
-    padding: 3.125rem 0;
-  }
-  #cta:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: .7;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #cta .container {
-    text-align: center;
-  }
-  #cta picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-  }
-  #cta picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #cta .title {
-    font-weight: 900;
-    font-size: min(7vw, 3rem);
-    line-height: 1.20833333;
-    color: #fff;
-    position: relative;
-    margin-bottom: 2.25rem;
-    text-align: center;
-  }
-  #cta p {
-    color: #fff;
-    text-align: center;
-    opacity: 1;
-    margin: auto;
-    margin-bottom: 2.25rem;
-    width: 96%;
-    max-width: 37.375rem;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-  #cta {
-    padding: 10.5rem 0;
-  }
-}
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #cta {
-    position: relative;
-    margin-top: 6.25rem;
-  }
-  #cta:before {
-    display: none;
-  }
-  #cta:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 69.25rem;
-    width: 125rem;
-    background: url("..assets/images/cta-squares.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -3;
-  }
-  #cta .container {
-    width: 90.0625%;
-    margin: auto;
-  }
-  #cta picture {
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  #cta picture:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: .7;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}
-
-/*-- -------------------------- -->
-<---       Side By Side First    -->
+<---       Side By Side A       -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -390,7 +185,7 @@
 }
 
 /*-- -------------------------- -->
-<---     Side By Side Second     -->
+<---     Side By Side B         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
@@ -579,7 +374,7 @@
 <--- -------------------------- --->
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  .services {
+  .card-container {
     border-radius: 0.3125em;
     margin: 0;
     /* margin-top: -10.4375em; */
@@ -594,7 +389,7 @@
     margin-bottom: 5.125em;
   }
 
-  .services .card {
+  .card-container .card {
     display: block;
     width: 100%;
     max-width: 22.3125em;
@@ -602,11 +397,11 @@
     margin-bottom: 3.125em;
   }
 
-  .services .card:last-of-type {
+  .card-container .card:last-of-type {
     margin-bottom: 0;
   }
 
-  .services .card picture {
+  .card-container .card picture {
     width: 100%;
     height: 100%;
     display: flex;
@@ -617,12 +412,12 @@
     border-radius: 50%;
   }
 
-  .services .card picture img {
+  .card-container .card picture img {
     width: 90%;
     height: 90%;
   }
 
-  .services .card h2 {
+  .card-container .card h2 {
     text-align: center;
     font-size: 2em;
     line-height: 1.35em;
@@ -631,7 +426,7 @@
     margin-bottom: 0.65em;
   }
 
-  .services .card p {
+  .card-container .card p {
     text-align: center;
     line-height: 1.33333333em;
     width: 100%;
@@ -641,7 +436,7 @@
 
 /* Inbetween */
 @media only screen and (min-width: 768px) {
-  .services {
+  .card-container {
     font-size: min(1.8vw, 1em);
     display: flex;
     justify-content: space-evenly;
@@ -649,7 +444,7 @@
     width: 100%;
   }
 
-  .services .card {
+  .card-container .card {
     margin: 0;
     max-width: 100%;
   }
@@ -657,22 +452,22 @@
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-  /* .services {
+  /* .card-container {
     padding: 3.125em 5em;
   } */
 
-  /* .services .card {
+  /* .card-container .card {
     max-width: 22.3125em;
   } */
 }
 
 /* Dark mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode #services {
+  body.dark-mode #card-container {
     background: var(--dark);
   }
 
-  body.dark-mode #services h2 {
+  body.dark-mode #card-container h2 {
     color: #fff;
     font-weight: bold;
   }
@@ -683,19 +478,19 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #reviews {
+  #section-header {
     /* Centers the button */
     text-align: center;
     padding: 60px 1rem;
   }
 
-  #reviews .cs-container {
+  #section-header .cs-container {
     width: 100%;
     max-width: 69rem;
     margin: auto;
   }
 
-  #reviews .cs-topper {
+  #section-header .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -707,7 +502,7 @@
     display: block;
   }
 
-  #reviews .cs-title {
+  #section-header .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -718,7 +513,7 @@
     position: relative;
   }
 
-  #reviews .cs-text {
+  #section-header .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5rem;
     text-align: center;
@@ -730,13 +525,13 @@
     color: var(--bodyTextColor);
   }
 
-  #reviews .cs-card-group {
+  #section-header .cs-card-group {
     padding: 0;
     /* 48px - 64px */
     margin: 0 auto clamp(3rem, 5vw, 4rem);
   }
 
-  #reviews .cs-item {
+  #section-header .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -758,11 +553,11 @@
     box-sizing: border-box;
   }
 
-  #reviews .cs-item:last-of-type {
+  #section-header .cs-item:last-of-type {
     margin-bottom: 0;
   }
 
-  #reviews .cs-item-img {
+  #section-header .cs-item-img {
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -771,7 +566,7 @@
     border-radius: 50%;
   }
 
-  #reviews .cs-item-p {
+  #section-header .cs-item-p {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0 0 1.25rem;
@@ -780,7 +575,7 @@
     border-bottom: 1px solid #E8E9EC;
   }
 
-  #reviews .cs-reviewer {
+  #section-header .cs-reviewer {
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
@@ -790,14 +585,14 @@
     color: var(--headerColor);
   }
 
-  #reviews .cs-desc {
+  #section-header .cs-desc {
     font-size: 0.875rem;
     font-weight: 400;
     color: var(--label);
     display: block;
   }
 
-  #reviews .cs-item-stars {
+  #section-header .cs-item-stars {
     width: 6rem;
     height: 1rem;
   }
@@ -805,14 +600,14 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-  #reviews .cs-card-group {
+  #section-header .cs-card-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
 
-  #reviews .cs-item {
+  #section-header .cs-item {
     /* reset margin so it won't interfere with flexbox */
     margin: 0;
   }
@@ -821,14 +616,147 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
 
-  body.dark-mode #reviews .cs-title,
-  body.dark-mode #reviews .cs-text,
-  body.dark-mode #reviews .cs-item-p,
-  body.dark-mode #reviews .cs-reviewer {
+  body.dark-mode #section-header .cs-title,
+  body.dark-mode #section-header .cs-text,
+  body.dark-mode #section-header .cs-item-p,
+  body.dark-mode #section-header .cs-reviewer {
     color: var(--bodyTextColorWhite);
   }
 
-  body.dark-mode #reviews .cs-item {
+  body.dark-mode #section-header .cs-item {
     background: var(--medium);
+  }
+}
+
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125rem 0;
+  }
+
+  #cta:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #cta .container {
+    text-align: center;
+  }
+
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #cta .title {
+    font-weight: 900;
+    font-size: min(7vw, 3rem);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 2.25rem;
+    text-align: center;
+  }
+
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2.25rem;
+    width: 96%;
+    max-width: 37.375rem;
+  }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5rem 0;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25rem;
+  }
+
+  #cta:before {
+    display: none;
+  }
+
+  #cta:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 69.25rem;
+    width: 125rem;
+    background: url("..assets/images/cta-squares.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+
+  #cta picture {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #cta picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
   }
 }
