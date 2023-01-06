@@ -179,7 +179,7 @@
     margin: auto;
   }
   #cta picture {
-    width: 90.0625%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -577,46 +577,258 @@
 /*-- -------------------------- --->
 <---   3 Pictures Side By Side  --->
 <--- -------------------------- --->
-/* Mobile - 360px */
-@media only screen {
-  #tpsbs .cs-column {
-    float: left;
-    width: 33.33%;
-    padding: .3em;
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  .services {
+    border-radius: 0.3125em;
+    margin: 0;
+    /* margin-top: -10.4375em; */
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    /* max-width: 82.5em; */
+    /* padding: 3.125em 0; */
+    /* border-top: 0.375em solid var(--primary);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05); */
+    margin-bottom: 5.125em;
   }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  .services .card {
+    display: block;
+    width: 100%;
+    max-width: 22.3125em;
+    margin: auto;
+    margin-bottom: 3.125em;
   }
 
-  /* {</style>
-  </head>
-  <body>
-  
-  <h2>Images Side by Side</h2>
-  <p>" "</p>
-  
-  <div class="row">
-    <div class="column">
-      <img src="img_snow.jpg" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="img_forest.jpg" alt="Forest" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
-    </div>
-  </div>
-  
-  </body>
-  </html>
+  .services .card:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .services .card picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.4375em;
+    border-radius: 50%;
+  }
+
+  .services .card picture img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .services .card h2 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.35em;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.65em;
+  }
+
+  .services .card p {
+    text-align: center;
+    line-height: 1.33333333em;
+    width: 100%;
+    opacity: .7;
+  }
+}
+
+/* Inbetween */
+@media only screen and (min-width: 768px) {
+  .services {
+    font-size: min(1.8vw, 1em);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .services .card {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  /* .services {
+    padding: 3.125em 5em;
+  } */
+
+  /* .services .card {
+    max-width: 22.3125em;
   } */
 }
 
-/* Clearfix (clear floats) */
+/* Dark mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #services {
+    background: var(--dark);
+  }
 
-/* Desktop - 1024px */
+  body.dark-mode #services h2 {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+/*-- -------------------------- -->
+<---   3 Pictures SBS Title     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #reviews {
+    /* Centers the button */
+    text-align: center;
+    padding: 60px 1rem;
+  }
+
+  #reviews .cs-container {
+    width: 100%;
+    max-width: 69rem;
+    margin: auto;
+  }
+
+  #reviews .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  #reviews .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 43.75rem;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+
+  #reviews .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0 auto;
+    /* 88px - 104px */
+    /* margin-bottom: clamp(5.5em, 10.2vw, 6.5em); */
+    color: var(--bodyTextColor);
+  }
+
+  #reviews .cs-card-group {
+    padding: 0;
+    /* 48px - 64px */
+    margin: 0 auto clamp(3rem, 5vw, 4rem);
+  }
+
+  #reviews .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    max-width: 33.875rem;
+    margin: 0 auto 4rem;
+    /* Padding L & R - 16px - 32px */
+    padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
+    /* 32px - 40px */
+    padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
+    box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 0.25rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* Prevents padding from affecting height & width */
+    box-sizing: border-box;
+  }
+
+  #reviews .cs-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  #reviews .cs-item-img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: -2.5rem;
+    background: var(--primary);
+    border-radius: 50%;
+  }
+
+  #reviews .cs-item-p {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0 0 1.25rem;
+    padding-bottom: 1.25rem;
+    color: var(--bodyTextColor);
+    border-bottom: 1px solid #E8E9EC;
+  }
+
+  #reviews .cs-reviewer {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    /* width: 40%; */
+    margin: 0 auto 0 0;
+    display: block;
+    color: var(--headerColor);
+  }
+
+  #reviews .cs-desc {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--label);
+    display: block;
+  }
+
+  #reviews .cs-item-stars {
+    width: 6rem;
+    height: 1rem;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #reviews .cs-card-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #reviews .cs-item {
+    /* reset margin so it won't interfere with flexbox */
+    margin: 0;
+  }
+}
 
 /* Dark Mode */
+@media only screen and (min-width: 0em) {
+
+  body.dark-mode #reviews .cs-title,
+  body.dark-mode #reviews .cs-text,
+  body.dark-mode #reviews .cs-item-p,
+  body.dark-mode #reviews .cs-reviewer {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode #reviews .cs-item {
+    background: var(--medium);
+  }
+}
