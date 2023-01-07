@@ -223,11 +223,11 @@
     height: 100%;
     width: 100%;
     /* makes image act like a background image */
-    object-fit: cover;
+    object-fit: scale-down;
   }
   #sbs-r .cs-picture1 {
     width: 42.625em;
-    height: 38.3125em;
+    height: 37.3125em;
     right: 0;
     top: 0;
   }
