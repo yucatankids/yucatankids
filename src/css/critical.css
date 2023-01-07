@@ -245,7 +245,6 @@
   }
   .card-container .card {
     display: block;
-    width: 100%;
     max-width: 22.3125em;
     margin: auto;
     margin-bottom: 3.125em;
