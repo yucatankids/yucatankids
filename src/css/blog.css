@@ -35,16 +35,15 @@
   top: 20px;
 }
 
-/* Caption of Modal Image */
-#caption {
+/* Underneath modal (caption and close button) */
+#modal-bottom{
   margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 30px 0;
-  /* height: 150px; */
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    justify-content: space-between;
+    color: #ccc;
+    padding: 25px 0;
 }
 
 /* Add Animation */
@@ -66,9 +65,9 @@
 
 /* The Close Button */
 .close {
-  position: absolute; 
+  /* position: absolute; 
   top: 105px;
-  right: 25%;
+  right: 25%; */
   color: #f1f1f1;
   font-size: 50px;
   font-weight: bold;
