@@ -649,7 +649,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .5;
+    opacity: .3;
     top: 0;
     left: 0;
     z-index: -1;
@@ -713,7 +713,6 @@
     display: block;
     height: 69.25rem;
     width: 125rem;
-    /* background: url("..assets/images/cta-squares.svg"); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -739,7 +738,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .5;
+    opacity: .3;
     top: 0;
     left: 0;
     z-index: 1;
