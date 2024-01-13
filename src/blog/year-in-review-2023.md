@@ -1,8 +1,9 @@
 ---
 pageName: year-in-review-2023
-blogTitle: 2023 Year In Review | Resumen del año 2023
-titleTag: Out with the old, in with the new!
-blogDescription: We are thrilled to be able to share our 2023 year in review with you!
+blogTitle: Year In Review 2023 | Resumen del año 2023
+titleTag: Year In Review
+blogDescription: Out with the old, in with the new. We are thrilled to be able
+  to share our 2023 year in review with you!
 author: Yucatán Kids
 date: 2024-01-01T21:50:48.933Z
 tags:
