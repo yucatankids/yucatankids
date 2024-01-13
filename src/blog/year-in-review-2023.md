@@ -17,7 +17,8 @@ We are thrilled to be able to share our 2023 year in review with you! It's been 
 
 Yucatán Kids A.C. initiated a pilot program for the English students at C.A.I.M.E.D.E.. Our newly hired teachers, Miguel (Mike) and Ricardo (Rich), with the support of our native speaking volunteers, took English lessons beyond the classroom. The goal of this program is to produce confident young English speakers who were well equipped to use their language skills when they aged out of C.A.I.M.E.D.E.. The students had begun the semester by cleaning and painting their classrooms and discussing the importance of a clean, safe working environment. 
 
-![Images of our newly hired teachers, Miguel (Mike) and Ricardo (Rich)](/images/blog/maestros.png "Maestros Miguel (Left) and Ricardo (Right)\\"")
+![Images of our English teachers, Miguel (Mike) and Ricardo (Rich)](/images/blog/maestros.png "Maestros Miguel (Left) and Ricardo (Right)")
+
 
 Our new teachers supervised the children in painting their English Classroom to boost their pride, and involvement in maintaining a clean and organized workspace. Gardening is another activity to connect children with nature by planting edible and decorative plants.
 
