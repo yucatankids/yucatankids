@@ -1,2 +1,276 @@
+---
+layout: 'base.html'
+canonical: 'https://www.yucatankidsmx.org'
+description: 'Quienes Somos'
 metaTitle: 'Grupo de Voluntarios Independientes Sin Fines de Lucro'
 tagTitle: 'Yucatán Kids | Una Iniciativa de Inglés y Artes Culturales'
+permalink: '/es/'
+eleventyNavigation:
+    key: Who We Are
+    order: 100
+---
+
+<!-- 
+This is to pre load any image above the fold, like hero section backgrounds.
+-->
+
+{% block preload %}
+<link rel="preload" as="image" href="/assets/images/kidssitting.jpg">
+{% endblock %}
+
+{% block pageCSS %}
+<link rel="stylesheet" href="/css/critical.css">
+<link rel="stylesheet" href="/css/local.css">
+
+<!--Defer loading the whole page css-->
+<link rel="stylesheet" href="/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+{% endblock %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <span class="cs-topper">Una Iniciativa de Inglés y Artes Culturales</span>
+            <h1 class="cs-title">Participa y Marca la Diferencia</h1>
+            <a href="/get-involved" class="cs-button-solid">Explora Cómo</a>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-picture" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="/assets/images/kidssmilling-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/kidssitting.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/kidssitting.jpg" alt="Kids Sitting" width="2250" height="1500">
+    </picture>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--         Our Beliefs - Card Content           -->
+<!-- ============================================ -->
+
+<section id="card-container" class="card-container">
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/images/icons/idea.png" alt="appliance" width="48" height="48">
+        </picture>
+        <h2>Nuestra Convicción</h2>
+        <p>
+            Todo niño tiene derecho a una educación de calidad y a la oportunidad de alcanzar su máximo potencial.
+        </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/images/icons/goal.png" alt="appliance" width="48" height="48">
+        </picture>
+        <h2>Nuestro Objetivo</h2>
+        <p>
+            Brindar a los adolescentes las herramientas para tener éxito en la escuela, cursar estudios superiores, y conseguir buenos empleos.
+        </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/images/icons/rocket.png" alt="appliance" width="48" height="48">
+        </picture>
+        <h2>Nuestra Misión</h2>
+        <p>
+            Empoderar a los niños para que alcancen sus metas académicas y profesionales mediante la enseñanza del inglés de calidad y el enriquecimiento cultural. 
+        </p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 ABOUT US                     -->
+<!-- ============================================ -->
+
+<section id="sbs">
+    <div class="cs-container">
+        <!-- Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/assetCaimede.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/assetCaimede.png">
+                <img loading="lazy" decoding="async" src="/assets/images/assetCaimede.png" alt="house" width="522" height="581">
+            </picture>
+        </div>
+        <!-- Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">Sobre Nosotros</span>
+            <h2 class="cs-title">Sobre Yucatán Kids</h2>
+            <p class="cs-text">
+                Somos un grupo internacional de voluntarios apasionados dedicados a empoderar a los niños mediante 
+              la educación del inglés y el enriquecimiento cultural. 
+            </p>
+            <p class="cs-text">
+                Fundados en 2015, hemos crecido hasta incluir a más de 30 voluntarios de todo el mundo, con nueve miembros en 
+              la junta directiva que representan a México y a otros seis países. Nuestro trabajo se lleva a cabo en Caimede, 
+              un hogar estatal para niños en situación de riesgo ubicado en Mérida, Yucatán. 
+            </p>
+            <p class="cs-text">
+                Creemos que cada niño merece la oportunidad de alcanzar su máximo potencial y nos comprometemos 
+              a apoyar a niños, niñas, y adolescentes en su camino hacia un futuro mejor. 
+            </p>
+            <p class="cs-text">
+                Apoyamos el desarrollo emocional y personal de niños desfavorecidos en Yucatán mediante 
+              la enseñanza del inglés, actividades educativas y culturales. 
+            </p>
+            <a href="/news-and-events" class="button-solid">Conoce las Últimas Noticias</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--            WHAT WE DO                        -->
+<!-- ============================================ -->
+
+<section id="sbs-r">
+    <div class="cs-container">
+        <!--  Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/assetTeacherInClass.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/assetTeacherInClass.png">
+                <img loading="lazy" decoding="async" src="/assets/images/assetTeacherInClass.png" alt="house" width="414" height="400">
+            </picture>
+        </div>
+        <!--  Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">Nuestro Impacto</span>
+            <h2 class="cs-title">Qué Hacemos</h2>
+            <p class="cs-text">
+                A medida que los adolescentes salen de orfanatos y comienzan su vida futura, pueden tener limitaciones en su 
+              educación y habilidades laborales, lo que puede dificultarles encontrar empleo y mantenerse económicamente.
+            </p>
+            <p class="cs-text">
+                Ofrecemos programas de aprendizaje de inglés a través del enriquecimiento cultural que abren un mundo de oportunidades 
+              educativas y profesionales para estos niños. El apoyo que brindamos tiene efectos transformadores y enriquecedores en su transición a la edad adulta. 
+            </p>
+            <p class="cs-text">
+                Los niños que tienen acceso a una educación de calidad en inglés y al enriquecimiento cultural tienen mayores 
+              probabilidades de tener éxito en la escuela, cursar estudios superiores y conseguir buenos empleos.
+            </p>
+            <a href="/what-we-do" class="button-solid">Conoce Más</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 CORE INITIATIVES             -->
+<!-- ============================================ -->
+
+<section id="section-header">
+    <div class="cs-container">
+        <span class="cs-topper">Nuestro Trabajo</span>
+        <h2 class="cs-title" id="core-initiatives">Nuestras Iniciativas Principales</h2>
+        <ul class="cs-card-group">
+            <!-- Item 1 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                    src="/assets/images/icons/write.png" alt="profile picture"
+                    width="80" height="80">
+                <span class="cs-reviewer">
+                    Programas de inglés de alta calidad 
+                </span>
+                <p class="cs-item-p">
+                    Estos programas son nuestro enfoque principal y están diseñados para empoderar a 
+                  los niños para que tengan éxito en su educación y futuras carreras 
+                </p>
+            </li>
+            <!-- Item 2 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                    src="/assets/images/icons/teamwork.png" alt="profile picture"
+                    width="80" height="80">
+                <span class="cs-reviewer">
+                    Construyendo alianzas comunitarias
+                </span>
+                <p class="cs-item-p">
+                    Buscamos construir alianzas con organizaciones comunitarias y otros grupos para 
+                  ampliar el alcance y el impacto de nuestros programas 
+                </p>
+            </li>
+        </ul>
+        <ul class="cs-card-group">
+            <!-- Item 3 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                    src="/assets/images/icons/emotion.png" alt="profile picture"
+                    width="80" height="80">
+                <span class="cs-reviewer">
+                    Brindando apoyo social y emocional
+                </span>
+                <p class="cs-item-p">
+                    Ofrecemos apoyo y orientación sobre cómo construir una red de apoyo social para 
+                  ayudar a los niños a afrontar los desafíos que puedan enfrentar en su transición a la edad adulta
+                </p>
+            </li>
+            <!-- Item 4 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                    src="/assets/images/icons/gavel.png" alt="profile picture"
+                    width="80" height="80">
+                <span class="cs-reviewer">
+                    Defendiendo los derechos de los niños
+                </span>
+                <p class="cs-item-p">
+                    Trabajamos para crear conciencia sobre la importancia de la educación y el enriquecimiento 
+                  cultural para los niños y promovemos políticas e iniciativas que apoyen estos objetivos 
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="section-header" class="become-sponsor">
+    <div class="cs-container">
+        <span class="cs-topper">Apóyanos</span>
+        <h2 class="cs-title">Conviértete en Patrocinador</h2>
+        <p>
+            ¡Feliz Año Nuevo desde Yucatán Kids AC! Gracias a todos los que nos apoyaron durante el año pasado. 
+          Agradecemos el apoyo de nuestra dedicada junta directiva y voluntarios, así como la generosidad de nuestros donantes y socios. 
+        </p>
+        <br />
+        <p>
+            Juntos, estamos logrando un cambio positivo en la vida de los niños y construyendo un mundo más equitativo e inclusivo. 
+          Con su ayuda, podemos construir un futuro mejor para los niños aquí. Apoya nuestro trabajo y genera un impacto positivo. 
+        </p>
+        <br />
+        <a aria-label="get involved" href="https://yucatankidsmx.org/donate.html" class="button-solid">DONAR</a>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+    <div class="container">
+        <h2 class="title">¿Listo Para Generar un Impacto Positivo?</h2>
+        <p>
+            Si quieres ser parte del cambio y deja tu huella para apoyar a la próxima generación, te invitamos a unirte a nuestra misión. 
+        </p>
+        <a href="/get-involved" class="button-solid">Conoce Más</a>
+    </div>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/volunteers-teaming-up.png">
+        <source media="(min-width: 601px)" srcset="/assets/images/volunteers-teaming-up.png">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/volunteers-teaming-up.png" alt="hands joining together" width="1920" height="1280">
+        </picture>
+</section>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
