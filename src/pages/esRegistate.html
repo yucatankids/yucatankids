@@ -1,0 +1,149 @@
+---
+layout: 'base.html'
+description: 'Formulatio de Registro de Volunatarios'
+
+metaTitle: 'Nonprofit Independent Volunteer Group'
+
+tagTitle: 'Yucatán Kids | Una Iniciativa de '
+
+permalink: 'volunteer-signup/es/'
+---
+
+{% block preload %}
+<link rel="preload" as="image" href="/assets/images/join-hands-together-business-teamwork.png">
+{% endblock %}
+
+{% block pageCSS %}
+<link rel="stylesheet" href="/css/getInvolved.css">
+{% endblock %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Hazte Voluntario</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/join-hands-together-business-teamwork.png">
+        <source media="(min-width: 601px)" srcset="/assets/images/join-hands-together-business-teamwork.png">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/join-hands-together-business-teamwork.png" alt=""
+            width="400" height="662">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                Volunteer Form                -->
+<!-- ============================================ -->
+
+<section id="volunteer-form">
+    <div class="cs-container">
+        <form id="cs-form" name="Volunteer Form" method="POST" data-netlify="true" action="/submission-success">
+            <input type="hidden" name="subject" value="New Volunteer Sign Up Request for Yucatan Kids" />
+            <div class="cs-content">
+                <span class="cs-topper">Regístate</span>
+                <h2 class="cs-title">Cuéntanos un Poco de Usted</h2>
+                <p class="cs-text">
+                    Siempre estamos abiertos a más voluntarios.
+                  ¡Rellena el formulario a continuación y nos pondremos en contacto!
+                </p>
+            </div>
+            <label>
+                Nombre
+                <input required type="text" id="name" name="name" placeholder="Nombre" class="text">
+            </label>
+            <label>
+                Correo Electrónico
+                <input required type="text" id="email" name="email" placeholder="Correo Electrónico" class="text">
+            </label>
+            <label>
+                Teléfono
+                <input required type="text" id="phone" name="phone" placeholder="Teléfono" class="text">
+            </label>
+            <label>
+                ¿Como te enteraste de nosotros?
+                <input type="text" id="find" name="how-did-you-find-us" placeholder="De un amigo, redes sociales, etc." class="text">
+            </label>
+            <div>
+                <h3>¿Cuál es su método de contacto preferido?</h3>
+            </div>
+            <div class="preferred-contact">
+                <div>
+                    <label>
+                        <input type="checkbox" value="Text" name="preferred-contact">
+                        Mensaje de Texto
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" value="Email" name="preferred-contact">
+                        Correo Electrónico
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" value="WhatsApp" name="preferred-contact">
+                        WhatsApp
+                    </label>
+                </div>
+            </div>
+            <label class="cs-label-message">
+                ¡Cuéntanos un poquito sobre usted!
+                <textarea required name="About" id="message"
+                    placeholder="Help us get to know you"></textarea>
+            </label>
+        <h3>¿Cuando estas disponible para ser voluntario?</h3>
+        <table>
+            <tr>
+                <th class="first-col"></th>
+                <th><p>M</p></th>
+                <th><p>T</p></th>
+                <th><p>W</p></th>
+                <th><p>T</p></th>
+                <th><p>F</p></th>
+                <th><p>S</p></th>
+                <th><p>S</p></th>
+            </tr>
+            <tr>
+                <td class="first-col"><p>Mañana</p></td>
+                <td><input type="checkbox" value="Monday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Tuesday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Wednesday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Thursday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Friday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Saturday Morning" name="morning-availability" /></td>
+                <td><input type="checkbox" value="Sunday Morning" name="morning-availability" /></td>
+            </tr>
+            <tr>
+                <td class="first-col"><p>Tarde</p></td>
+                <td><input type="checkbox" value="Monday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Tuesday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Wednesday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Thursday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Friday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Saturday Afternoon" name="afternoon-availability" /></td>
+                <td><input type="checkbox" value="Sunday Afternoon" name="afternoon-availability" /></td>
+            </tr>
+        </table>
+            <button class="cs-button-solid" type="submit">Submit</button>
+        </form>
+        <div class="cs-right-section">
+            <!--Email-->
+            <span class="cs-header">Correo Electrónico</span>
+            <a class="cs-link" href="mailto:janemallonee@gmail.com">janemallonee@gmail.com</a>
+            <!--WhatsApp-->
+            <span class="cs-header">WhatsApp</span>
+            <a class="cs-link" href="tel:+52999-232-7039">9992327039</a>
+            <!--Address-->
+            <span class="cs-header">Dirección</span>
+            <a class="cs-link" href="">Calle 116 A, 701E Jardines de
+                Nueva Mulsay I <span class="cs-block"> 97249 Mérida, Yucatán, México</span></a>
+            <!-- Background Image-->
+            <picture aria-hidden="true" class="cs-bg-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/bluewallandbookbag.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/bluewallandbookbag.png">
+                <img loading="lazy" decoding="async" src="/assets/images/bluewallandbookbag.png" alt="bookbag"
+                    width="542" height="662">
+            </picture>
+        </div>
+    </div>
+</section>
