@@ -1,0 +1,115 @@
+/*-- -------------------------- -->
+<---           Styles           -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+    // Español Mode Color Scheme
+    :root {
+        --dark: #082032;
+    }
+
+    body.espanol-mode {
+        background-color: var(--dark);
+
+        p, li, h1, h2, h3, h4, h5, h6 {
+            color: #000;
+        }
+
+        .en {
+            display: none;
+        }
+
+        .es {
+            display: block !important;
+        }
+    }
+
+    .en, .es {
+        display: none;
+    }
+}
+
+/*-- -------------------------- -->
+<---     Español Mode Toggle    -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+    // Español Mode Toggle Switch Animation
+    body.espanol-mode {
+        #espanol-mode-toggle {
+            .en {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+
+            .es {
+                transform: translate(-50%, -150%);
+                opacity: 1; //Was 0
+            }
+        }
+    }
+
+    // Toggle 
+    #espanol-mode-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 60/16rem;
+        width: 48/16rem;
+        height: 48/16rem;
+        background: transparent;
+        border: none;
+        overflow: hidden;
+        padding: 0;
+
+        //center image inside button
+        img, svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25/16rem;
+            height: 25/16rem;
+            pointer-events: none;
+            
+        }
+
+        .es {
+            z-index: 2;
+            // Transition properties
+            transition: transform .3s, fill .3s;
+            //transition: transform .3s, opacity .3s, fill .3s;
+            //fill: #000; // --> change the color of the graphic based on the background being lighter or darker
+        }
+
+        .en {
+            z-index: 1;
+            // Transition property
+            //transform: translate(-50%, 100%);
+            opacity: 1;
+            //transition: transform .3s, opacity .3s;
+        }
+        
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 64em) {
+    #espanol-mode-toggle {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        margin-left: 30/16rem;
+        margin-bottom: 0/16rem;
+
+        // .es {
+        //     fill: #fff;
+        // }
+    }
+}
