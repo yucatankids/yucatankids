@@ -1,0 +1,80 @@
+/*-- -------------------------- -->
+<---      Language Toggle       -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+    // Language Toggle Switch Animation
+    body.es-mode {
+        #language-toggle {
+            .es {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+
+            .en {
+                transform: translate(-50%, -150%);
+                opacity: 0;
+            }
+        }
+    }
+
+    // Toggle 
+    #language-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6.5rem;
+        width: 48/16rem;
+        height: 48/16rem;
+        background: transparent;
+        border: none;
+        overflow: hidden;
+        padding: 0;
+
+        //center image inside button
+        img,
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25/16rem;
+            height: 25/16rem;
+            pointer-events: none;
+
+        }
+
+        .en {
+            z-index: 2;
+            // Transition properties
+            fill: #6ab53c; // --> change the color of the en graphic based on the background being lighter or darker
+        }
+
+        .es {
+            z-index: 1;
+            // Transition property
+            transform: translate(-50%, 100%);
+            opacity: 0;
+        }
+
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 64em) {
+    #language-toggle {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        margin-left: .875rem;
+        margin-bottom: 0/16rem;
+
+        .en {
+            fill: #6ab53c;;
+        }
+    }
+}
