@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!--                 Navigation                   -->
 <!-- ============================================ -->
-{% set navPages = collections.all | eleventyNavigation %}
+{% set navPages = collections.all | pageLang | eleventyNavigation %}
 
 <div id="navigation">
     <div aria-hidden="true" class="background-color-div">

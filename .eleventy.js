@@ -3,7 +3,24 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const { DateTime } = require('luxon');
 
 module.exports = async function (eleventyConfig) {
+  const { I18nPlugin } = await import("@11ty/eleventy");
+
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(I18nPlugin, {
+    defaultLanguage: "en",
+		// Rename the default universal filter names
+		filters: {
+			// transform a URL with the current page’s locale code
+			url: "locale_url",
+			// find the other localized content for a specific input file
+			links: "locale_links",
+		},
+    // When to throw errors for missing localized content files
+		errorMode: "strict", // throw an error if content is missing at /en/slug
+		// errorMode: "allow-fallback", // only throw an error when the content is missing at both /en/slug and /slug
+		// errorMode: "never", // don’t throw errors for missing content
+  });
+  
 
   // allows css, assets, and CMS config files to be passed into /public
   eleventyConfig.addPassthroughCopy('./src/css/**/*.css');
@@ -22,6 +39,10 @@ module.exports = async function (eleventyConfig) {
   // this filter allows dates to be converted into a normal, locale format. view the docs to learn more (https://moment.github.io/luxon/api-docs/index.html#datetime)
   eleventyConfig.addFilter('postDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
+
+  eleventyConfig.addFilter("pageLang", function(value) {
+    return value.filter(item => item.page.lang === this.page.lang)
   });
 
   return {
