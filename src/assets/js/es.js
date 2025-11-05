@@ -8,29 +8,32 @@ var body = document.querySelector("body");
 const languageToggle = document.querySelector("#language-toggle");
 
 // Get language status
-let language = localStorage.getItem("language");
-
-
-// If no language is set, set it to English by default
-if (!language) {
-localStorage.setItem("language", "en");
-}
+let language = navigator.language || navigator.userLanguage;
 
 // Enable Spanish
 const setLangToSpanish = () => {
   body.classList.add("es-mode");
-  localStorage.setItem("language", "es")
+  localStorage.setItem("language", "es");
+  document.documentElement.lang = "es";
 }
 
 // Disable Spanish
 const setLangToEnglish = () => {
   body.classList.remove("es-mode");
-  localStorage.setItem("language", 'en')
+  localStorage.setItem("language", 'en');
+  document.documentElement.lang = "en";
 }
 
-// Check the state of language in local storage
-if (language == "es") {
-  setLangToSpanish();
+// If no language is set, set it to English by default
+if (!language) {
+  setLangToEnglish();
+} else {
+  // Check the state of user browser language settings
+  if (language.includes("es")) {
+    setLangToSpanish();
+  } else if (language.includes("en")) {
+    setLangToEnglish();
+  }
 }
 
 // add event listener to the language button toggle

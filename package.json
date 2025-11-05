@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jacobzacarias/yucatankids#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-navigation": "^0.3.5"
   }
 }
