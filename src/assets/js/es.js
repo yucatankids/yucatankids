@@ -8,43 +8,74 @@ var body = document.querySelector("body");
 const languageToggle = document.querySelector("#language-toggle");
 
 // Get language status
-let language = navigator.language || navigator.userLanguage;
+let browserLanguage = navigator.language || navigator.userLanguage;
+let storedLanguage = localStorage.getItem("language");
+let language = storedLanguage || browserLanguage || 'en';
+
+// Apply DOM attributes and storage without redirect
+const applyLangAttributes = (lang) => {
+  if (lang === 'es') {
+    body.classList.add('es-mode');
+    document.documentElement.lang = 'es';
+    localStorage.setItem('language', 'es');
+  } else {
+    body.classList.remove('es-mode');
+    document.documentElement.lang = 'en';
+    localStorage.setItem('language', 'en');
+  }
+};
+
+// Only change the URL when the path actually needs switching to avoid reload loops/flashing
+const ensurePathForLang = (lang) => {
+  try {
+    const href = location.href;
+    if (lang === 'es' && href.includes('/en/')) {
+      const newURL = href.replace('/en/', '/es/');
+      location.replace(newURL);
+    } else if (lang === 'en' && href.includes('/es/')) {
+      const newURL = href.replace('/es/', '/en/');
+      location.replace(newURL);
+    }
+  } catch (e) {
+    // ignore errors changing location
+  }
+};
 
 // Enable Spanish
 const setLangToSpanish = () => {
-  body.classList.add("es-mode");
-  localStorage.setItem("language", "es");
-  document.documentElement.lang = "es";
+  applyLangAttributes('es');
+  ensurePathForLang('es');
 }
 
-// Disable Spanish
+// Disable Spanish / set English
 const setLangToEnglish = () => {
-  body.classList.remove("es-mode");
-  localStorage.setItem("language", 'en');
-  document.documentElement.lang = "en";
+  applyLangAttributes('en');
+  ensurePathForLang('en');
 }
 
-// If no language is set, set it to English by default
+// Initial setup: apply attributes immediately and only redirect if needed
 if (!language) {
   setLangToEnglish();
 } else {
   // Check the state of user browser language settings
   if (language.includes("es")) {
     setLangToSpanish();
-  } else if (language.includes("en")) {
+  } else {
     setLangToEnglish();
   }
 }
 
-// add event listener to the language button toggle
-languageToggle.addEventListener('click', () => {
-  // on click, check localstorage for the language value
-  language = localStorage.getItem("language");
-  if (language !== "es") {
-    // if language is not set to Spanish, run this function to set it
-    setLangToSpanish();
-  } else {
-    // if language is set to Spanish, run this function to set it to English
-    setLangToEnglish();
-  }
-})
+// add event listener to the language button toggle if it exists
+if (languageToggle) {
+  languageToggle.addEventListener('click', () => {
+    // on click, check localstorage for the language value
+    language = localStorage.getItem("language") || language;
+    if (language !== "es") {
+      // if language is not set to Spanish, run this function to set it
+      setLangToSpanish();
+    } else {
+      // if language is set to Spanish, run this function to set it to English
+      setLangToEnglish();
+    }
+  });
+}
