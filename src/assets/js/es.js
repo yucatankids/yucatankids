@@ -30,10 +30,10 @@ const ensurePathForLang = (lang) => {
   try {
     const href = location.href;
     if (lang === 'es' && href.includes('/en/')) {
-      const newURL = href.replace('/en/', '/es/');
+      const newURL = '/es/';
       location.replace(newURL);
     } else if (lang === 'en' && href.includes('/es/')) {
-      const newURL = href.replace('/es/', '/en/');
+      const newURL = '/en/';
       location.replace(newURL);
     }
   } catch (e) {

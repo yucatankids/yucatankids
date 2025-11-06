@@ -1,0 +1,85 @@
+---
+layout: 'base.html'
+description: 'Medios y Eventos'
+metaTitle: 'Grupo de Voluntarios Independientes Sin Fines de Lucro'
+tagTitle: 'Yucatán Kids | Una Iniciativa de Inglés y Artes Culturales'
+permalink: '/es/media-y-eventos/'
+eleventyNavigation:
+    key: Medios y Eventos
+    order: 500
+---
+
+{% block preload %}
+<link rel="preload" as="image" href="/assets/images/KidsInClassUnicef.jpeg">
+{% endblock %}
+
+{% block pageCSS %}
+<link rel="stylesheet" href="/css/blog.css">
+{% endblock %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Medios y Eventos</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/KidsInClassUnicef.jpeg">
+        <source media="(min-width: 601px)" srcset="/assets/images/KidsInClassUnicef.jpeg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/KidsInClassUnicef.jpeg"
+            alt="Smiling children in a classroom" width="400" height="662">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+<div class="blog-container main-content-wrapper">
+    <!--Main content -->
+    <div class="main-content">
+        <!-- ============================================ -->
+        <!--                 Blog Articles                -->
+        <!-- ============================================ -->
+
+        {% if collections.post |length == 0 %}
+        <h1>No Recent Posts</h1>
+        {% endif %}
+        {%- for post in collections.post | reverse -%}
+        <article class="recent-articles">
+            <!--Main Article Image-->
+            <picture class="blog-mainImage">
+                <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="795" height="400"
+                    decoding="async" />
+            </picture>
+            <!--Article Info-->
+            <div class="article-group">
+                <div class="blog-authorGroup">
+                    <!--Author Image-->
+                    <picture class="blog-author-img">
+                        <img src="/assets/images/logos/1MainLogoSOLIDBackg.png" alt="Yucatan Kids logo" width="32"
+                            height="32" decoding="async" />
+                    </picture>
+                    <span class="blog-author">{{ post.data.author }}</span>
+                    <span aria-hidden="true" class="blog-dot"></span>
+                    <!--Blog Date-->
+                    <span class="blog-date">{{ post.date | postDate }}</span>
+                </div>
+                <h2 class="blog-h1">
+                    {{ post.data.blogTitle }}
+                </h2>
+                <p class="blog-desc">
+                    {{ post.data.blogDescription }}
+                </p>
+                <a href="{{ post.url }}" class="blog-link">Leer Más</a>
+            </div>
+        </article>
+        {%- endfor -%}
+    </div>
+
+    <!-- ============================================ -->
+    <!--                Featured Posts                -->
+    <!-- ============================================ -->
+
+    {% include 'featured-post.html' %}
+</div>
