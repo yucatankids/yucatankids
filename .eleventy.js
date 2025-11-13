@@ -16,7 +16,7 @@ module.exports = async function (eleventyConfig) {
 			links: "locale_links",
 		},
     // When to throw errors for missing localized content files
-		errorMode: "strict", // throw an error if content is missing at /en/slug
+		errorMode: "allow-fallback", // throw an error if content is missing at /en/slug
 		// errorMode: "allow-fallback", // only throw an error when the content is missing at both /en/slug and /slug
 		// errorMode: "never", // don’t throw errors for missing content
   });

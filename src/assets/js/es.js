@@ -50,18 +50,33 @@ const initLanguageToggle = () => {
   };
 
   // Only change the URL when the path actually needs switching to avoid reload loops/flashing
-  const ensurePathForLang = (lang) => {
-    try {
-      const href = location.href;
-      if (lang === 'es' && href.includes('/en/')) {
-        location.replace('/es/');
-      } else if (lang === 'en' && href.includes('/es/')) {
-        location.replace('/en/');
+    const ensurePathForLang = (lang) => {
+      try {
+        // Use sessionStorage as a short-lived guard so redirects happen only once per session
+        let alreadyRedirected = null;
+        try {
+          alreadyRedirected = sessionStorage.getItem('languageRedirectedTo');
+        } catch (e) {
+          // sessionStorage may be unavailable in some privacy modes — ignore
+        }
+
+        const pathname = location.pathname || '/';
+
+        if (lang === 'es') {
+          // If already on an /es/ path or we've already redirected to 'es' this session, do nothing
+          if (pathname.startsWith('/es/') || alreadyRedirected === 'es') return;
+          try { sessionStorage.setItem('languageRedirectedTo', 'es'); } catch (e) {}
+          window.location.replace('/es/');
+        } else if (lang === 'en') {
+          // If not on an /es/ path or we've already redirected to 'en' this session, do nothing
+          if (!pathname.startsWith('/es/') || alreadyRedirected === 'en') return;
+          try { sessionStorage.setItem('languageRedirectedTo', 'en'); } catch (e) {}
+          window.location.replace('/');
+        }
+      } catch (e) {
+        // ignore errors changing location or accessing storage
       }
-    } catch (e) {
-      // ignore errors changing location
-    }
-  };
+    };
 
   // Enable Spanish
   const setLangToSpanish = () => {
