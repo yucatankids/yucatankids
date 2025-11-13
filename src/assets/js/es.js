@@ -30,6 +30,8 @@ let language = storedLanguage || browserLanguage || 'en';
 const initLanguageToggle = () => {
   const body = document.querySelector("body");
   const languageToggle = document.querySelector(languageToggleSelector);
+  // set the dropdown button value based on the current language
+  languageToggle.value = language.includes("es") ? "es" : "en";
 
   // Apply DOM attributes and storage 
   const applyLangAttributes = (lang) => {
@@ -87,14 +89,16 @@ const initLanguageToggle = () => {
 
   // add event listener to the language button toggle if it exists
   if (languageToggle) {
-    languageToggle.addEventListener('click', () => {
-      // on click, check localstorage for the language value
-      language = safeGetItem("language") || language;
-      if (language !== "es") {
-        // if language is not set to Spanish, set it
+    languageToggle.addEventListener('change', (event) => {
+      // get the selected language from the toggle
+      selectedLang = event.target.value;
+      // if the selected language is ES and the current lang is not ES, 
+      // set it to Spanish
+      if (selectedLang === "es" && language !== "es") {
         setLangToSpanish();
-      } else {
-        // if language is set to Spanish, set it to English
+      } else if (selectedLang === "en" && language === "es") {
+        // else if the selected language is EN and the current lang is ES,
+        // set it to English
         setLangToEnglish();
       }
     });

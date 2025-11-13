@@ -17,34 +17,17 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
-    // Language Toggle Switch Animation
-    body.es-mode {
-        #language-toggle {
-            .es {
-                transform: translate(-50%, -50%);
-                opacity: 1;
-            }
-
-            .en {
-                transform: translate(-50%, -150%);
-                opacity: 0;
-            }
-        }
-    }
-
     // Toggle 
     #language-toggle {
         display: block;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 6.5rem;
-        width: 48/16rem;
-        height: 48/16rem;
-        background: transparent;
-        border: none;
+        right: 7rem;
+        width: auto;
+        border: 1.5px solid #6ab53c;
         overflow: hidden;
-        padding: 0;
+        padding: 0.25rem;
 
         //center image inside button
         img,
@@ -59,19 +42,6 @@
 
         }
 
-        .en {
-            z-index: 2;
-            // Transition properties
-            fill: #6ab53c; // --> change the color of the en graphic based on the background being lighter or darker
-        }
-
-        .es {
-            z-index: 1;
-            // Transition property
-            transform: translate(-50%, 100%);
-            opacity: 0;
-        }
-
     }
 }
 
@@ -82,8 +52,9 @@
         top: auto;
         right: auto;
         transform: none;
-        margin-left: .875rem;
+        margin-left: 1rem;
         margin-bottom: 0/16rem;
+        margin-right: .5rem;
 
         .en {
             fill: #6ab53c;;

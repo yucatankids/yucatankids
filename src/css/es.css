@@ -17,28 +17,18 @@
     }
 
 @media only screen and (min-width: 0em) {
-    body.es-mode #language-toggle .es {
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
-
-    body.es-mode #language-toggle .en {
-        transform: translate(-50%, -150%);
-        opacity: 0;
-    }
 
     #language-toggle {
         display: block;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 6.5rem;        ;
-        width: 3rem;
-        height: 3rem;
-        background: transparent;
-        border: none;
+        right: 7rem;
+        width: auto;
+        border: 1.5px solid #6ab53c;
         overflow: hidden;
-        padding: 0;
+        border-radius: 8px;
+        padding: .25rem;
     }
 
     #language-toggle img,
@@ -51,17 +41,6 @@
         height: 1.5625rem;
         pointer-events: none;
     }
-
-    #language-toggle .en {
-        z-index: 2;
-        fill: #6ab53c;
-    }
-
-    #language-toggle .es {
-        z-index: 1;
-        transform: translate(-50%, 100%);
-        opacity: 0;
-    }
 }
 
 /* Desktop */
@@ -71,11 +50,9 @@
         top: auto;
         right: auto;
         transform: none;
-        margin-left: .875rem;
+        margin-left: 1rem;
+        margin-right: .5rem;
         margin-bottom: 0rem;
     }
 
-    #language-toggle .en {
-        fill: #6ab53c;
-    }
 }
