@@ -2,11 +2,13 @@
 <---      Language Toggle      -->
 <--- -------------------------- -*/
 
-/* Mobile */
-
     body.es-mode {
         #english-footer {
             display: none;
+        }
+
+        .en-content {
+            display: none !important;
         }
     }
 
@@ -14,8 +16,13 @@
         #spanish-footer {
             display: none;
         }
+
+        .es-content {
+            display: none !important;
+        }
     }
 
+/* Mobile */
 @media only screen and (min-width: 0em) {
 
     #language-toggle {
