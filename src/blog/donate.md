@@ -47,3 +47,5 @@ jjjardinaria@gmail.com
 <hr/>
 <br/>
 To become a sponsor of Yucatan Kids AC, contact us for more information.
+<br/>
+Para convertirse en patrocinador de Yucatán Kids AC, contáctenos para obtener más información.

@@ -11,7 +11,7 @@ public_folder: "/images/blog"
 
 collections:
   - name: "blog"
-    label: "Media & Events"
+    label: "News"
     folder: "src/blog"
     create: true
     slug: "{{pageName}}"
