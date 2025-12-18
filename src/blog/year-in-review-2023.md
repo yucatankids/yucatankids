@@ -9,7 +9,7 @@ date: 2024-01-01T21:50:48.933Z
 tags:
   - post
   - featured
-image: /images/blog/newlogo.jpg
+image: /images/blog/logocir.png
 imageAlt: Yucatán Kids AC
 ---
 We are thrilled to be able to share our 2023 year in review with you! It's been an incredible year filled with exciting and positive changes. We can't wait to highlight all the amazing moments and developments that have taken place. Get ready to celebrate with us!
