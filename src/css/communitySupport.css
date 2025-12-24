@@ -158,6 +158,165 @@
 }
 
 /*-- -------------------------- -->
+<---  level-section-header      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #level-section-header {
+    /* Centers the button */
+    text-align: center;
+    padding: 20px 1rem 80px 1rem;
+  }
+
+  #level-section-header .cs-container {
+    width: 100%;
+    max-width: 69rem;
+    margin: auto;
+  }
+
+  #level-section-header .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  #level-section-header .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 43.75rem;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+
+  #level-section-header .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0 auto;
+    /* 88px - 104px */
+    margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
+    color: var(--bodyTextColor);
+  }
+
+  #level-section-header .cs-card-group {
+    padding: 0;
+    /* 48px - 64px */
+    margin: 0 auto clamp(3rem, 5vw, 4rem);
+  }
+
+  #level-section-headerr .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    max-width: 33.875rem;
+    margin: 0 auto 4rem;
+    /* Padding L & R - 16px - 32px */
+    padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
+    /* 32px - 40px */
+    padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
+    box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 0.25rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* Prevents padding from affecting height & width */
+    box-sizing: border-box;
+  }
+
+  #level-section-header .cs-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  #level-section-header .cs-item-img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: -2.5rem;
+    background: var(--primary);
+    border-radius: 50%;
+  }
+
+  #level-section-header .cs-item-p {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0 0 1.25rem;
+    padding-bottom: 1.25rem;
+    color: var(--bodyTextColor);
+    border-bottom: 1px solid #E8E9EC;
+  }
+
+  #level-section-header .cs-reviewer {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    /* width: 40%; */
+    margin: 0 auto 0 0;
+    display: block;
+    color: var(--headerColor);
+  }
+
+  #level-section-header .cs-desc {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--label);
+    display: block;
+  }
+
+  #level-section-header .cs-item-stars {
+    width: 6rem;
+    height: 1rem;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #level-section-header .cs-card-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #level-section-header .cs-item {
+    /* reset margin so it won't interfere with flexbox */
+    margin: 0;
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+
+  body.dark-mode #level-section-header .cs-title,
+  body.dark-mode #level-section-headerr .cs-text,
+  body.dark-mode #level-section-header .cs-item-p,
+  body.dark-mode #level-section-header .cs-reviewer {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode #level-section-header .cs-item {
+    background: var(--medium);
+  }
+
+  /* body.dark-mode #level-section-header .cs-desc {
+    color: var(--primaryLight);
+  } */
+}
+
+/*-- -------------------------- -->
 <---      card-container          -->
 <--- -------------------------- -*/
 /* Mobile */
@@ -1021,5 +1180,216 @@ table {
   th,
   td {
     word-break: keep-all;
+  }
+}
+
+/*-- -------------------------- -->
+<---      Side By Side (right)  -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #sbs-r {
+    padding: 75px 1rem;
+  }
+
+  #sbs-r .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  #sbs-r .cs-left {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, .7em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    height: 39.75em;
+    position: relative;
+  }
+
+  #sbs-r .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  #sbs-r .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: scale-down;
+  }
+
+  #sbs-r .cs-picture1 {
+    width: 40.625em;
+    height: 37.3125em;
+    right: 0;
+    top: 0;
+  }
+
+  #sbs-r .cs-picture2 {
+    width: 25.875em;
+    height: 25em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
+    left: 0;
+    bottom: 0;
+  }
+
+  #sbs-r .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+
+  #sbs-r .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+
+  #sbs-r .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 50rem;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+
+  #sbs-r .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+
+  #sbs-r .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  #sbs-r .cs-flex-group {
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #F7F7F7;
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  #sbs-r .cs-flex-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: #767676;
+  }
+
+  #sbs-r .cs-name {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+    color: var(--headerColor);
+    display: block;
+  }
+
+  #sbs-r .cs-job {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #767676;
+    display: block;
+  }
+
+  #sbs-r .cs-quote-icon {
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+    height: auto;
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #sbs-r .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+
+  #sbs-r .cs-left {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+    /* sends it to the right */
+    order: 2;
+  }
+
+  #sbs-r .cs-right {
+    margin: 0;
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+
+  body.dark-mode #sbs-r .cs-left:before,
+  body.dark-mode #sbs-r .cs-left:after {
+    background: var(--accent);
+  }
+
+  body.dark-mode #sbs-r .cs-picture2 {
+    background-color: var(--dark);
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+  }
+
+  /* body.dark-mode #sbs-r .cs-topper {
+    color: var(--primaryLight);
+  } */
+  body.dark-mode #sbs-r .cs-title,
+  body.dark-mode #sbs-r .cs-text,
+  body.dark-mode #sbs-r .cs-h3,
+  body.dark-mode #sbs-r .cs-flex-p,
+  body.dark-mode #sbs-r .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode #sbs-r .cs-flex-group {
+    background-color: var(--accent);
+  }
+
+  body.dark-mode #sbs-r .cs-job {
+    color: var(--bodyTextColorWhite);
+    opacity: .8;
+  }
+
+  body.dark-mode #sbs-r .cs-quote-icon {
+    opacity: .2;
   }
 }
