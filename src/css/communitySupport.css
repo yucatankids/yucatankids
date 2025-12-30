@@ -1089,7 +1089,8 @@
 
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-
+  
+  body.dark-mode #level-section-header .cs-text,
   body.dark-mode #volunteer-form .cs-text,
   body.dark-mode #volunteer-form .cs-title {
     color: var(--bodyTextColorWhite);
