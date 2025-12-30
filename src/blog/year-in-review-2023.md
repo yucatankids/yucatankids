@@ -1,6 +1,6 @@
 ---
 pageName: year-in-review
-blogTitle: "Year In Review 2023 "
+blogTitle: "Year In Review "
 titleTag: Year In Review
 blogDescription: Out with the old, in with the new. We are thrilled to be able
   to share our year in review with you!
