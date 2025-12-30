@@ -1,5 +1,5 @@
 ---
-pageName: testimonios
+pageName: es-testimonios
 blogTitle: "Voces de impacto: testimonios de nuestros voluntarios"
 titleTag: Testimonios de voluntarios
 blogDescription: Nos complace presentar una recopilación de testimonios que
