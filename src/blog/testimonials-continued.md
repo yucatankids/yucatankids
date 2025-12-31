@@ -2,12 +2,12 @@
 pageName: testimonials-continued
 blogTitle: "Voices of Impact Continued: Volunteer Testimonials"
 titleTag: Testimonials Continued
-blogDescription: Here are two more testimonials straight
-  from the voices of some amazing volunteers.
+blogDescription: Here are two more testimonials straight from the voices of some
+  amazing volunteers.
 author: Yucatán Kids
 date: 2023-08-29T01:00:01.270Z
 tags:
-  - post
+  - en
 image: /images/blog/photogroup.png
 imageAlt: Two volunteers speaking to a group.
 ---
