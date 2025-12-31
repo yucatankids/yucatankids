@@ -7,7 +7,7 @@ blogDescription: We're happy to present a collection of testimonials directly
 author: Yucatán Kids
 date: 2023-08-11T17:33:01.270Z
 tags:
-  - post
+  - en
 image: /images/blog/volunteers.png
 imageAlt: Group of volunteers walking from behind
 ---
