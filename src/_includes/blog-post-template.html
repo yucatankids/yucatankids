@@ -80,10 +80,10 @@ eleventyComputed:
 <!--                   Sidebar                    -->
 <!-- ============================================ -->
 
-{% if 'en' in page.url %}
-{% include 'featured-post.html' %}
-{% else %}
+{% if 'es' in page.url %}
 {% include 'featured-post.es.html' %}
+{% else %}
+{% include 'featured-post.html' %}
 {% endif %}
 </div>
 
