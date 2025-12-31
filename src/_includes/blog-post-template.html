@@ -80,7 +80,11 @@ eleventyComputed:
 <!--                   Sidebar                    -->
 <!-- ============================================ -->
 
+{% if 'en' in page.url %}
 {% include 'featured-post.html' %}
+{% else %}
+{% include 'featured-post.es.html' %}
+{% endif %}
 </div>
 
 <script defer src="/assets/js/modal.js"></script>
