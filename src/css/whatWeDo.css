@@ -384,6 +384,7 @@
       width: 43em;
       height: 50em;
       position: relative;
+      display: grid;
     }
   /* Caption text */
   .text {
