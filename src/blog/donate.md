@@ -5,13 +5,31 @@ titleTag: Donate
 blogDescription: How To Donate To Yucatán Kids
 author: Yucatán Kids
 date: 2025-12-31T00:03:56.300Z
-tags:
-  - en
-  - enFeatured
+tags: []
 image: /images/blog/support.png
 imageAlt: Donation Icon
 ---
-Banking information:<br/>
+In addition to teaching English, Yucatan Kids AC partners with Casa Otoch, the state-run orphanage, to provide the children with resources and opportunities, helping them transition into independence.
+
+We depend on the generosity of our benefactors and sponsors to continue to provide the highest level of English instruction and to continue our mission for the children of Casa Otoch. To become a sponsor of Yucatan Kids AC, contact us for more information.
+
+Donations are tax deductible. We can provide you with factoras/receipts.
+
+##### <hr/>
+
+### **Donation levels** 
+
+##### PLATINUM: 50,000 MX & ABOVE 
+
+##### GOLD: 20,000 MX 
+
+##### SILVER: 10,000 MX 
+
+##### BRONZE: 5,000 MX
+
+##### <hr/>
+
+### Banking information:<br/>
 
 YUCATAN KIDS A.C. <br/>
 
@@ -23,7 +41,7 @@ Bank Name: Kapital Bank (may also appear as BANCO AUTOFIN)
 
 <hr />
 
-Donations are tax deductible. We can provide you with factoras/receipts. Please contact us. <br/>
+### Contact information:<br/>
 
 Jane Mallonee <br/>
 
@@ -40,7 +58,3 @@ Jorge Lara Bass <br/>
 jjjardinaria@gmail.com <br/>
 
 <hr/>
-
-To become a sponsor of Yucatan Kids AC, contact us for more information.
-
-<br/>
