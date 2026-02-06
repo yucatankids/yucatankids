@@ -5,28 +5,43 @@ titleTag: Donar
 blogDescription: Cómo Donar A Nosotros
 author: Yucatán Kids
 date: 2025-12-30T23:58:30.566Z
-tags:
-  - es
-  - esFeatured
+tags: []
 image: /images/blog/support.png
 imageAlt: Icono de donación
 ---
+Además de enseñar inglés, Yucatán Kids AC colabora con Casa Otoch, el orfanato estatal, para brindar recursos y oportunidades a los niños, ayudándolos a lograr su independencia. Conviértete en patrocinador de Yucatán Kids AC y contáctanos para más información.
 
+Dependemos de benefactores y patrocinadores para mantener una enseñanza de inglés de alta calidad y apoyar nuestra misión con los niños de Casa Otoch. Las donaciones son deducibles de impuestos. Podemos proporcionarte factoras.
 
-Información bancaria:
-<br/>
-<br/>
-YUCATAN KIDS A.C.
-<br/>
-CLABE: 128910039474100155
-<br/>
-Account Number: 003947410015
-<br/>
-Bank Name: Kapital Bank (también puede aparecer como BANCO AUTOFIN)
+Para convertirse en patrocinador de Yucatán Kids AC, contáctenos para obtener más información.
+
+##### <hr/>
+
+### **Niveles de donación:**
+
+##### PLATINO: 50,000 MX Y MAS
+
+##### ORO: 20,000 MX
+
+##### PLATA: 10,000 MX
+
+##### BRONCE: 5,000 MX
+
+##### <hr/>
+
+### Información bancaria: <br/>
+
+YUCATAN KIDS A.C. <br/>
+
+CLABE: 128910039474100155 <br/>
+
+Account Number: 003947410015 <br/>
+
+Bank Name: Kapital Bank (también puede aparecer como BANCO AUTOFIN
 
 <hr />
 
-Las donaciones son deducibles de impuestos. Podemos proporcionarle facturas/recibos. Póngase en contacto con nosotros. <br/>
+### Información de contacto: <br/>
 
 Jane Mallonee <br/>
 
@@ -43,5 +58,3 @@ Jorge Lara Bass <br/>
 jjjardinaria@gmail.com <br/>
 
 <hr/>
-
-Para convertirse en patrocinador de Yucatán Kids AC, contáctenos para obtener más información.
