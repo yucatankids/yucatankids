@@ -33,9 +33,11 @@
         right: 7rem;
         width: auto;
         border: 1.5px solid #6ab53c;
+        color: white;
+        background-color: #6ab53c;
         overflow: hidden;
         border-radius: 8px;
-        padding: .25rem;
+        padding: .35rem;
     }
 
     #language-toggle img,

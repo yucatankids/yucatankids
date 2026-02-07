@@ -108,9 +108,9 @@ eleventyNavigation:
         <div class="cs-right">
             <h2 class="cs-title">Clases de Inglés</h2>
             <p class="cs-text">
-                Nuestras clases de inglés son impartidas por un profesor de inglés profesional y cuentan con el apoyo de
-                voluntarios que actúan como
-                asistentes de profesor. Además de aprender inglés, nuestras clases buscan enriquecer la cultura y ayudar
+                Nuestras clases de inglés son impartidas por son impartidas por nuestros tres profesores. 
+                Se enfatiza la gramática, el vocabulario, la lectura y la escritura.
+                Además de aprender inglés, nuestras clases buscan enriquecer la cultura y ayudar
                 a los niños a desarrollar habilidades
                 importantes como el pensamiento crítico, la resolución de problemas, y la comunicación. Estas
                 habilidades son la base para el éxito en diversos
@@ -119,36 +119,100 @@ eleventyNavigation:
             </p>
         </div>
     </div>
-    </div>
 </section>
 
+<br />
 <!-- ============================================ -->
-<!--              Side by Side B                  -->
+<!--           Picture Slideshow                  -->
 <!-- ============================================ -->
-
 <section id="sbs-r">
     <div class="cs-container">
         <!-- Image Section -->
-        <div class="cs-left">
-            <picture class="cs-picture cs-picture1" aria-hidden="true">
-                <source media="auto" srcset="/assets/images/assetAboutMe.png">
-                <img loading="lazy" decoding="async" src="/assets/images/assetAboutMe.png" alt="Learn About Me Session"
-                    width="414" height="400">
-            </picture>
+        <!-- Slideshow container -->
+        <div class="slideshow-container cs-left">
+            <div class="mySlides fade">
+                <picture class="cs-picture cs-picture1" aria-hidden="true">
+                    <source media="auto" srcset="/assets/images/supplementalActivitiesPhotos/photoPyramidsTrip.png">
+                    <img loading="lazy" decoding="async"
+                        src="/assets/images/supplementalActivitiesPhotos/photoPyramidsTrip.png"
+                        alt="Viaje a las Pirámides" />
+                </picture>
+                <div class="text">Viaje a las Pirámides</div>
+            </div>
+            <div class="mySlides fade">
+                <picture class="cs-picture cs-picture1" aria-hidden="true">
+                    <source media="auto"
+                        srcset="/assets/images/supplementalActivitiesPhotos/photoAdvancedStudentSpeakingWithUSConsulateGeneral.png">
+                    <img loading="lazy" decoding="async"
+                        src="/assets/images/supplementalActivitiesPhotos/photoAdvancedStudentSpeakingWithUSConsulateGeneral.png"
+                        alt="Estudiante Avancada Hablando con el Consulado General de EE. UU." />
+                </picture>
+                <div class="text">Estudiante Avancada Hablando con el Consulado General de EE. UU.</div>
+            </div>
+            <div class="mySlides fade">
+                <picture class="cs-picture cs-picture1" aria-hidden="true">
+                    <source media="auto" srcset="/assets/images/supplementalActivitiesPhotos/photoZooTrip.png">
+                    <img loading="lazy" decoding="async"
+                        src="/assets/images/supplementalActivitiesPhotos/photoZooTrip.png" 
+                        alt="Viaje al Zoológico" />
+                </picture>
+                <div class="text">Viaje al Zoológico</div>
+            </div>
+            <div class="mySlides fade">
+                <picture class="cs-picture cs-picture1" aria-hidden="true">
+                    <source media="auto"
+                        srcset="/assets/images/supplementalActivitiesPhotos/photoIcecreamAtLaPlancha.png">
+                    <img loading="lazy" decoding="async"
+                        src="/assets/images/supplementalActivitiesPhotos/photoIcecreamAtLaPlancha.png"
+                        alt="Helado en La Plancha" />
+                </picture>
+                <div class="text">Helado en La Plancha</div>
+            </div>
+            <div class="mySlides fade">
+                <picture class="cs-picture cs-picture1" aria-hidden="true">
+                    <source media="auto" srcset="/assets/images/supplementalActivitiesPhotos/photoMagicShow.png">
+                    <img loading="lazy" decoding="async"
+                        src="/assets/images/supplementalActivitiesPhotos/photoMagicShow.png" 
+                        alt="Espectáculo de Magia" />
+                </picture>
+                <div class="text">Espectáculo de Magia</div>
+            </div>
+            <div class="mySlides fade">
+                <picture class="cs-picture cs-picture1" aria-hidden="true">
+                    <source media="auto"
+                        srcset="/assets/images/supplementalActivitiesPhotos/photoTouribusXmasLightTour.png">
+                    <img loading="lazy" decoding="async"
+                        src="/assets/images/supplementalActivitiesPhotos/photoTouribusXmasLightTour.png"
+                        alt="Tour de Luces Navideños Touribus" />
+                </picture>
+                <div class="text">Tour de Luces Navideños Touribus</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <div style="justify-self:center; bottom: 15px; position: absolute;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
         </div>
         <!-- Content Section-->
         <div class="cs-right">
-            <h2 class="cs-title">Learning About Me <br> (Conociéndome)</h2>
+            <h2 class="cs-title">Actividades Suplementarias</h2>
             <p class="cs-text">
-                Nuestro grupo de discusión semanal para preadolescentes busca ayudar a desarrollar la autoestima y el
-                optimismo hacia su futuro. Buscamos presentarles
-                técnicas para que interactúen entre sí, fomenten un entorno de apoyo y desarrollen un sentido de
-                comunidad. El objetivo de este programa es inspirarlos
-                a apoyarse y empoderarse mutuamente mientras enfrentan los desafíos de esta etapa de sus vidas.
+                Excursiones y viajes de un día a lugares donde los niños pueden usar el inglés en situaciones reales. Las excursiones 
+                ofrecen a los jovenes mayores la oportunidad de explorar sitios arqueológicos, museos de arte, parques, ballet y diversas 
+                actuaciones. Los niños más pequeños visitan el zoológico, centros comerciales como La Plancha, el cine y mucho más.
             </p>
         </div>
     </div>
 </section>
+
+<br />
 
 <!-- ============================================ -->
 <!--       3 Pictures Side By Side                -->
@@ -204,7 +268,7 @@ eleventyNavigation:
             Patrocínanos o participa como voluntario para mejorar la educación de los niños que merecen ayuda.
             ¡Contáctanos! Nos encantaría contar con su apoyo.
         </p>
-        <a href="/es/involucrarse/" class="button-solid">Involucrarse</a>
+        <a href="/es/apoyo-comunitario/" class="button-solid">Apoyo Comunitario</a>
     </div>
     <picture>
         <source media="(max-width: 600px)" srcset="/assets/images/preschoolers.png">
