@@ -144,7 +144,8 @@
   body.dark-mode #section-header .cs-title,
   body.dark-mode #section-header .cs-text,
   body.dark-mode #section-header .cs-item-p,
-  body.dark-mode #section-header .cs-reviewer {
+  body.dark-mode #section-header .cs-reviewer,
+  body.dark-mode .donor-link {
     color: var(--bodyTextColorWhite);
   }
 
@@ -215,7 +216,7 @@
     margin: 0 auto clamp(3rem, 5vw, 4rem);
   }
 
-  #level-section-headerr .cs-item {
+  #level-section-header .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -280,6 +281,12 @@
     width: 6rem;
     height: 1rem;
   }
+
+  .donor-link {
+    color: var(--headerColor);
+    position: relative;
+    font-size: .98em;
+  }
 }
 
 /* Tablet - 768px */
@@ -301,7 +308,7 @@
 @media only screen and (min-width: 0em) {
 
   body.dark-mode #level-section-header .cs-title,
-  body.dark-mode #level-section-headerr .cs-text,
+  body.dark-mode #level-section-header .cs-text,
   body.dark-mode #level-section-header .cs-item-p,
   body.dark-mode #level-section-header .cs-reviewer {
     color: var(--bodyTextColorWhite);
@@ -360,9 +367,23 @@
     border-radius: 50%;
   }
 
+  .card-container .card picture.token {
+    background: none !important;
+  }
+
+  .card-container .card picture.company {
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  
   .card-container .card picture img {
     width: 6em;
     height: 6em;
+  }
+
+  .card-container .card picture img.company-logo {
+    width: 4.5em;
+    height: 4.5em;
   }
 
   .card-container .card h2 {
