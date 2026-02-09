@@ -6,8 +6,9 @@ blogDescription: Cómo Donar A Nosotros
 author: Yucatán Kids
 date: 2025-12-30T23:58:30.566Z
 tags: []
-image: /images/blog/support.png
-imageAlt: Icono de donación
+image: /images/blog/donation_photo.jpg
+imageAlt: Una mano sosteniendo una pequeña taza llena de monedas, con una planta
+  creciendo
 ---
 Además de enseñar inglés, Yucatán Kids AC colabora con Casa Otoch, el orfanato estatal, para brindar recursos y oportunidades a los niños, ayudándolos a lograr su independencia. Conviértete en patrocinador de Yucatán Kids AC y contáctanos para más información.
 
