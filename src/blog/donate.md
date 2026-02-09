@@ -6,8 +6,8 @@ blogDescription: How To Donate To Yucatán Kids
 author: Yucatán Kids
 date: 2025-12-31T00:03:56.300Z
 tags: []
-image: /images/blog/support.png
-imageAlt: Donation Icon
+image: /images/blog/donation_photo.jpg
+imageAlt: A hand holding a small cup filled with coins, with a plant growing
 ---
 In addition to teaching English, Yucatan Kids AC partners with Casa Otoch, the state-run orphanage, to provide the children with resources and opportunities, helping them transition into independence.
 
