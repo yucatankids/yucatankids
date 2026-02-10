@@ -5,13 +5,14 @@ titleTag: Resumen Del Año
 blogDescription: Fuera lo viejo, bienvenido lo nuevo. ¡Estamos encantados de
   poder compartir con ustedes nuestro resumen del año!
 author: Yucatán Kids
-date: 2025-12-30T05:17:37.972Z
+date: 2026-01-01T21:50:48.933Z
 tags:
   - es
   - esFeatured
 image: /images/blog/logocir.png
 imageAlt: Yucatán Kids AC
 ---
+
 ¡Estamos encantados de poder compartir con ustedes nuestro resumen del año! Ha sido un año increíble, lleno de cambios emocionantes y positivos. Estamos deseando destacar todos los momentos y avances increíbles que han tenido lugar. ¡Prepárense para celebrarlo con nosotros!
 
 #### **Servicios y logros del programa**

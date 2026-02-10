@@ -489,7 +489,7 @@
   #section-header {
     /* Centers the button */
     text-align: center;
-    padding: 55px 1rem 85px;
+    padding: 55px 1rem 125px;
   }
   #section-header .cs-container {
     width: 100%;
@@ -537,7 +537,7 @@
     max-width: 40.625rem;
     margin: 0 auto;
     /* 88px - 104px */
-    margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
+    margin-bottom: clamp(1em, 2vw, 6.5em);
     color: var(--bodyTextColor);
   }
   #section-header .cs-card-group {

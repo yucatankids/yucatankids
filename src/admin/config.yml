@@ -4,14 +4,14 @@ backend:
 
 local_backend: true
 # change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://yucatankidsmx.org/assets/images/logos/1MainLogoTRSPT.png
+logo_url: https://yucatankidsmx.org/assets/images/logos/ykHandsTransparent.png
 
 media_folder: "public/images/blog"
 public_folder: "/images/blog"
 
 collections:
   - name: "blog"
-    label: "Media & Events"
+    label: "News"
     folder: "src/blog"
     create: true
     slug: "{{pageName}}"
