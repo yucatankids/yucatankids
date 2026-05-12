@@ -38,7 +38,7 @@
 
         .cs-left {
             /* scaling the font size with the view width */
-            font-size:~"min(2.31vw, .7em)";
+            font-size: ~"min(2.31vw, .7em)";
             /* using ems so we can use font size to scale the whole section */
             width: 42.4375em;
             height: 39.75em;
@@ -51,6 +51,7 @@
             overflow: hidden;
             position: absolute;
             display: block;
+
             img {
                 position: absolute;
                 top: 0;
@@ -166,6 +167,17 @@
             right: clamp(1rem, 4vw, 2rem);
         }
 
+        .cs-board-list {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: left;
+            width: 100%;
+            max-width: 750/16rem;
+            margin: 0 auto 32/16rem;
+            padding-left: 24/16rem;
+            color: var(--bodyTextColor);
+        }
+
         .button-solid {
             margin-top: 32/16rem;
         }
@@ -182,7 +194,7 @@
         }
 
         .cs-left {
-            font-size:~"min(1.2vw, 1em)";
+            font-size: ~"min(1.2vw, 1em)";
             flex: none;
         }
 
@@ -198,7 +210,9 @@
         #sbs {
 
             .cs-left {
-                &:before, &:after {
+
+                &:before,
+                &:after {
                     background: var(--accent);
                 }
             }
@@ -213,7 +227,11 @@
             //     color: var(--primaryLight)
             // }
 
-            .cs-title, .cs-text, .cs-h3, .cs-flex-p, .cs-name {
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-flex-p,
+            .cs-name {
                 color: var(--bodyTextColorWhite);
             }
 
@@ -256,7 +274,7 @@
 
         .cs-left {
             /* scaling the font size with the view width */
-            font-size:~"min(2.31vw, .7em)";
+            font-size: ~"min(2.31vw, .7em)";
             /* using ems so we can use font size to scale the whole section */
             width: 631/16em;
             height: 636/16em;
@@ -269,6 +287,7 @@
             overflow: hidden;
             position: absolute;
             display: block;
+
             img {
                 position: absolute;
                 top: 0;
@@ -335,9 +354,6 @@
             margin: 0 auto;
             margin-bottom: 16/16rem;
             color: var(--bodyTextColor);
-            &:last-of-type {
-                margin-bottom: 32/16rem;
-            }
         }
 
         .cs-flex-group {
@@ -395,7 +411,7 @@
         }
 
         .cs-left {
-            font-size:~"min(1.2vw, 1em)";
+            font-size: ~"min(1.2vw, 1em)";
             flex: none;
             /* sends it to the right */
             order: 2;
@@ -413,7 +429,9 @@
         #sbs-r {
 
             .cs-left {
-                &:before, &:after {
+
+                &:before,
+                &:after {
                     background: var(--accent);
                 }
             }
@@ -428,7 +446,11 @@
             //     color: var(--primaryLight)
             // }
 
-            .cs-title, .cs-text, .cs-h3, .cs-flex-p, .cs-name {
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-flex-p,
+            .cs-name {
                 color: var(--bodyTextColorWhite);
             }
 
@@ -462,6 +484,7 @@
         position: relative;
         /* Prevents overflow from the image going off screen */
         overflow: hidden;
+
         .cs-container {
             width: 100%;
             max-width: 1322/16em;
@@ -494,7 +517,7 @@
 
         .cs-image-group {
             /* used rem so it doesn't scale with the font size of on parent */
-            font-size:~"min(1.1vw, 1em)";
+            font-size: ~"min(1.1vw, 1em)";
             width: 100%;
             max-width: 1322/16em;
             padding: 0;
@@ -516,6 +539,7 @@
         .cs-picture {
             position: relative;
             display: block;
+
             img {
                 position: absolute;
                 top: 0;
@@ -600,7 +624,8 @@
     #section-header {
         /* Centers the button */
         text-align: center;
-        padding: 55px 1rem 125px;;
+        padding: 55px 1rem 125px;
+        ;
 
         .cs-container {
             width: 100%;
@@ -638,6 +663,7 @@
             color: var(--headerColor);
             position: relative;
         }
+
         .cs-title#core-initiatives {
             margin: 0 auto 3rem;
         }
@@ -670,7 +696,7 @@
             padding: 60/16rem clamp(1rem, 3.2vw, 2rem) 0;
             /* 32px - 40px */
             padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-            box-shadow: 0px 20px 39px 0px rgba(0,0,0,0.05);
+            box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
             border-radius: 4/16rem;
             background: #fff;
             position: relative;
@@ -747,7 +773,11 @@
 @media only screen and (min-width: 0em) {
     body.dark-mode {
         #section-header {
-            .cs-title, .cs-text, .cs-item-p, .cs-reviewer {
+
+            .cs-title,
+            .cs-text,
+            .cs-item-p,
+            .cs-reviewer {
                 color: var(--bodyTextColorWhite);
             }
 
@@ -809,7 +839,7 @@
 
         .title {
             font-weight: 900;
-            font-size:~"min(7vw, 3rem)";
+            font-size: ~"min(7vw, 3rem)";
             line-height: 58/48;
             color: #fff;
             position: relative;
@@ -842,9 +872,11 @@
     #cta {
         position: relative;
         margin-top: 100/16rem;
+
         &:before {
             display: none;
         }
+
         &:after {
             content: '';
             position: absolute;
@@ -859,7 +891,8 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: -3;
-         }
+        }
+
         .container {
             width: 90.0625%;
             margin: auto;
