@@ -55,6 +55,6 @@ Jorge Lara Bass <br/>
 
 +52 999-195-0901 <br/>
 
-jjjardinaria@gmail.com <br/>
+jjjardineria@gmail.com <br/>
 
 <hr/>
