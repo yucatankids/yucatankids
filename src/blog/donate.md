@@ -17,13 +17,13 @@ Donations are tax deductible. We can provide you with factoras/receipts.
 
 ##### <hr/>
 
-### **Donation levels** 
+### **Donation levels**
 
-##### PLATINUM: 50,000 MX & ABOVE 
+##### PLATINUM: 50,000 MX & ABOVE
 
-##### GOLD: 20,000 MX 
+##### GOLD: 20,000 MX
 
-##### SILVER: 10,000 MX 
+##### SILVER: 10,000 MX
 
 ##### BRONZE: 5,000 MX
 
@@ -38,6 +38,10 @@ CLABE: 128910039474100155 <br/>
 Account Number: 003947410015 <br/>
 
 Bank Name: Kapital Bank (may also appear as BANCO AUTOFIN)
+
+
+
+D﻿onate through [Paypal](https://www.paypal.com/paypalme/JaneDMallonee) <br/>
 
 <hr />
 
