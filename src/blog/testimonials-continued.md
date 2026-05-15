@@ -1,5 +1,6 @@
 ---
 pageName: testimonials-continued
+translationUrl: '/es-continuación-de-testimonios.html'
 blogTitle: "Voices of Impact Continued: Volunteer Testimonials"
 titleTag: Testimonials Continued
 blogDescription: Here are two more testimonials straight from the voices of some

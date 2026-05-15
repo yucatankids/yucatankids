@@ -1,5 +1,6 @@
 ---
 pageName: es-continuación-de-testimonios
+translationUrl: '/testimonials-continued.html'
 blogTitle: "Voces de impacto (continuación): testimonios de voluntarios"
 titleTag: Continuación de testimonios
 blogDescription: Aquí hay dos testimonios más directamente de la boca de algunos

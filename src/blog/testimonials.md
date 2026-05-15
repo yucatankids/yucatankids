@@ -1,5 +1,6 @@
 ---
 pageName: testimonials
+translationUrl: '/testimonios.html'
 blogTitle: "Voices of Impact: Testimonials from Our Volunteers"
 titleTag: Volunteer Testimonials
 blogDescription: We're happy to present a collection of testimonials directly

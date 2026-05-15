@@ -2,24 +2,12 @@
 <---      Language Toggle      -->
 <--- -------------------------- -*/
 
-    body.es-mode {
-        #english-footer {
-            display: none;
-        }
-
-        .en-content {
-            display: none !important;
-        }
+    html[lang="es"] #english-footer {
+        display: none;
     }
 
-    body.en-mode {
-        #spanish-footer {
-            display: none;
-        }
-
-        .es-content {
-            display: none !important;
-        }
+    html[lang="en"] #spanish-footer {
+        display: none;
     }
 
 /* Mobile */
@@ -39,17 +27,6 @@
         overflow: hidden;
         border-radius: 8px;
         padding: .35rem;
-    }
-
-    #language-toggle img,
-    #language-toggle svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 1.5625rem;
-        height: 1.5625rem;
-        pointer-events: none;
     }
 }
 

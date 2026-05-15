@@ -29,32 +29,34 @@
 
         <!--Main Nav-->
         <nav id="navbar-menu" aria-label="main navigation">
-            <ul class="en-content">
-            {%- for entry in navPages %}
-                <li>
-                    <a 
-                        {% if entry.url == page.url %} class="active" {% endif %}
-                        href="{{ entry.url }}"
-                    >
-                        {{ entry.title }}
-                    </a>
-                </li>
-            {%- endfor %}
-            </ul>
-
-            <ul class="es-content">
+            <ul>
+            {%- set currentLang = 'es' if (lang == 'es' or (tags and 'es' in tags)) else page.lang %}
+            {%- if currentLang == 'es' %}
                 {%- for entry in esNavPages %}
                 <li>
-                    <a {% if entry.url==page.url %} class="active" {% endif %} href="{{ entry.url }}">
+                    <a {% if entry.url == page.url %} class="active" {% endif %} href="{{ entry.url }}">
                         {{ entry.title }}
                     </a>
                 </li>
                 {%- endfor %}
+            {%- else %}
+                {%- for entry in navPages %}
+                <li>
+                    <a {% if entry.url == page.url %} class="active" {% endif %} href="{{ entry.url }}">
+                        {{ entry.title }}
+                    </a>
+                </li>
+                {%- endfor %}
+            {%- endif %}
             </ul>
         </nav>
 
         <!-- Language toggle-->
-        <select id="language-toggle" name="language" >
+        {%- set enUrl = page.url if currentLang == 'en' else (translationUrl or page.url) %}
+        {%- set esUrl = page.url if currentLang == 'es' else (translationUrl or page.url) %}
+        <select id="language-toggle" name="language"
+            data-url-en="{{ enUrl }}"
+            data-url-es="{{ esUrl }}">
             <option value="en">ENGLISH</option>
             <option value="es">ESPAÑOL</option>
         </select>

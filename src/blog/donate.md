@@ -1,5 +1,6 @@
 ---
 pageName: donate
+translationUrl: '/es-donar.html'
 blogTitle: How To Donate To Yucatán Kids
 titleTag: Donate
 blogDescription: How To Donate To Yucatán Kids

@@ -1,5 +1,6 @@
 ---
 pageName: year-in-review
+translationUrl: '/es-resumen-del-año.html'
 blogTitle: "Year In Review "
 titleTag: Year In Review
 blogDescription: Out with the old, in with the new. We are thrilled to be able

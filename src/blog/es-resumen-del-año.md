@@ -1,5 +1,6 @@
 ---
 pageName: es-resumen-del-año
+translationUrl: '/year-in-review-2023.html'
 blogTitle: Resumen Del Año
 titleTag: Resumen Del Año
 blogDescription: Fuera lo viejo, bienvenido lo nuevo. ¡Estamos encantados de

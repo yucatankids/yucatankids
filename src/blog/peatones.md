@@ -1,5 +1,6 @@
 ---
 pageName: peatones
+translationUrl: '/es-peatones.html'
 blogTitle: Thank you, Peatones
 titleTag: Peatones
 blogDescription: A short thank you message to Peatones and everyone who helped

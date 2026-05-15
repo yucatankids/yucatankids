@@ -1,5 +1,7 @@
 ---
 pageName: es-donar
+translationUrl: '/donate.html'
+lang: es
 blogTitle: Cómo Donar A Nosotros
 titleTag: Donar
 blogDescription: Cómo Donar A Nosotros

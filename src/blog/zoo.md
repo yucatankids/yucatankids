@@ -1,5 +1,6 @@
 ---
 pageName: zoo
+translationUrl: '/es-zoo.html'
 blogTitle: "English Beyond the Classroom at the zoo "
 titleTag: English Beyond the Classroom at the zoo
 blogDescription: English Beyond the Classroom students visit the zoo.

@@ -1,5 +1,6 @@
 ---
 pageName: es-peatones
+translationUrl: '/peatones.html'
 blogTitle: Gracias, Peatones.
 titleTag: Peatones
 blogDescription: Un breve mensaje de agradecimiento a Peatones y a todos los que

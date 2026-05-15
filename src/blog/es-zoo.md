@@ -1,5 +1,6 @@
 ---
 pageName: es-zoo
+translationUrl: '/zoo.html'
 blogTitle: Inglés Más Allá del Aula en el Zoológico
 titleTag: Inglés Más Allá del Aula en el Zoo
 blogDescription: Los alumnos del programa English Beyond the Classroom visitan el zoológico
