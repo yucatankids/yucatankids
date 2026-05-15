@@ -40,6 +40,8 @@ Account Number: 003947410015 <br/>
 
 Bank Name: Kapital Bank (también puede aparecer como BANCO AUTOFIN
 
+Donar a través de [Paypal](https://www.paypal.com/paypalme/JaneDMallonee) <br/>
+
 <hr />
 
 ### Información de contacto: <br/>
